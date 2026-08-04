@@ -157,5 +157,12 @@ Neither licence covers NPASS, ChEMBL, PubMed, UniProt, identifiers or records,
 third-party binaries, software packages, weights, or caches. See
 `LICENSE_SCOPE.md` and `THIRD_PARTY_NOTICES.md`.
 
-No repository URL, commit hash, release URL, or DOI is stated here until the
-corresponding public object exists and has been verified.
+## Public release identifiers
+
+- Repository: https://github.com/chenyuhu628-bot/temporal-natural-product-target-audit
+- GitHub release: https://github.com/chenyuhu628-bot/temporal-natural-product-target-audit/releases/tag/v1.0.0
+- Software archive DOI: https://doi.org/10.5281/zenodo.21788846
+- Aggregate dataset DOI: https://doi.org/10.5281/zenodo.21788854
+
+All four identifiers were verified after authenticated publication on 4 August
+2026. The Zenodo file checksums match the local release packages.

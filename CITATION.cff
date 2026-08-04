@@ -3,6 +3,9 @@ message: "If you use this software, please cite the software release and the ass
 title: "Software for a source-aware date-precision audit of temporal natural-product target retrieval"
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.21788846
+repository-code: "https://github.com/chenyuhu628-bot/temporal-natural-product-target-audit"
+url: "https://doi.org/10.5281/zenodo.21788846"
 authors:
   - given-names: Chenyu
     family-names: Hu

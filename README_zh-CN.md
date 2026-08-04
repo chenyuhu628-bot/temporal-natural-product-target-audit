@@ -109,5 +109,12 @@ receipt 判断是否需要恢复归档响应。ChEMBL 31 约需 4.51 GB 压缩�
 ChEMBL、PubMed、UniProt 及其记录、第三方二进制、软件包、权重或缓存。详见
 `LICENSE_SCOPE.md` 和 `THIRD_PARTY_NOTICES.md`。
 
-在公开对象实际存在并完成验证前，本文件不填写仓库 URL、commit、release URL
-或 DOI。
+## 公开发布标识符
+
+- 仓库：https://github.com/chenyuhu628-bot/temporal-natural-product-target-audit
+- GitHub release：https://github.com/chenyuhu628-bot/temporal-natural-product-target-audit/releases/tag/v1.0.0
+- 软件归档 DOI：https://doi.org/10.5281/zenodo.21788846
+- 汇总数据集 DOI：https://doi.org/10.5281/zenodo.21788854
+
+以上标识符均在 2026 年 8 月 4 日完成认证发布后回验；Zenodo 远端文件校验和
+与本地发布包一致。
