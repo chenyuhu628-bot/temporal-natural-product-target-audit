@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "status": "PASS",
+  "test_scope": "synthetic_only_before_real_input_execution",
+  "test_count": 8,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "checks": [
+    "exact uniform-tie expectation matches exhaustive permutation enumeration",
+    "exact Recall best-worst bounds match exhaustive enumeration",
+    "exact NDCG best-worst bounds match exhaustive enumeration",
+    "membership classification covers score-identifiable, boundary-dependent, and not-retrieved states",
+    "structural all-zero fractional Recall and hypergeometric hit probability",
+    "one-sided zero-success Clopper-Pearson formula for n=19 and n=22",
+    "cell-stable seed derivation",
+    "connected-component partition and constant-estimand bootstrap"
+  ],
+  "command": {
+    "executable_basename": "python.exe",
+    "module": "unittest",
+    "raw_argv_recorded": false
+  },
+  "real_scientific_input_read_by_tests": false,
+  "real_tie_aware_result_computed_before_lock": false,
+  "created_at_utc": "2026-07-29T08:53:21.6718876Z"
+}

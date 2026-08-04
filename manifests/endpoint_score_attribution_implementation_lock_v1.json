@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "lock_state": "LOCKED_BEFORE_REAL_ENDPOINT_SCORE_ATTRIBUTION_EXECUTION",
+  "locked_at_utc": "2026-07-28T09:57:06.5026018Z",
+  "audit_id": "endpoint_score_attribution_posthoc_v1",
+  "timing": "outcome_visible_post_hoc_explanatory_audit",
+  "outcome_visible_before_lock": true,
+  "real_audit_executed_before_lock": false,
+  "scientific_protocol_changed": false,
+  "score_rank_metric_or_endpoint_changed": false,
+  "script_sha256": "ef38288c6702d370c3cbe10ad1fda32c4cd04f598064f9d369b24b59bcc0de28",
+  "governance_amendment_sha256": "63e6022191d40a1feba465d13f894d6ad69fa935b48622c7e99e6d7b35e5fdea",
+  "protocol_lock_sha256": "96befee13ae1d41ad433c8697fac92ccd30fb25e24c3cf1279c6b4b7e040abd9",
+  "implementation_testing_before_lock": "py_compile_and_cli_contract_only",
+  "identifier_release_authorized": false,
+  "external_redistribution_authorized": false
+}
+

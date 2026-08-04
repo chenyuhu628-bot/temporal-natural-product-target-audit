@@ -1,0 +1,19 @@
+{
+  "title": "Software for a source-aware date-precision audit of temporal natural-product target retrieval",
+  "description": "Reproducibility code for a source-aware date-precision audit of temporal natural-product target retrieval.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Hu, Chenyu"
+    }
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "cheminformatics",
+    "natural products",
+    "target retrieval",
+    "temporal validation",
+    "reproducibility"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dataset": "MMseqs2",
+  "version": "18-8cc5c",
+  "manifest_id": "mmseqs2_windows_18_8cc5c",
+  "release_date": "2025-07-27",
+  "release_url": "https://github.com/soedinglab/MMseqs2/releases/tag/18-8cc5c",
+  "purpose": "Official Windows sequence-clustering executable for derivative protein homology auditing; not a research data source.",
+  "files": [
+    {
+      "name": "mmseqs-win64.zip",
+      "url": "https://github.com/soedinglab/MMseqs2/releases/download/18-8cc5c/mmseqs-win64.zip",
+      "expected_bytes": 22129914,
+      "purpose": "official Windows MMseqs2 release archive"
+    }
+  ]
+}
+

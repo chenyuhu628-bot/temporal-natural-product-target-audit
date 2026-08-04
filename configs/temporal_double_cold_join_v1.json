@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "run_label": "v1_1_pmid_verified__pending_repaired_scaffold_audit",
+  "purpose": "Configuration for joining observed date-verified temporal future pairs with a repaired scaffold ledger and fixed MMseqs2 target-coldness audits. The scaffold path is intentionally a placeholder until the repaired audit is frozen.",
+  "identity_thresholds": ["0.30", "0.50", "0.70"],
+  "inputs": {
+    "future_pair_table": "data/processed/strict_temporal_future_candidates_v1_1_pmid_verified.csv.gz",
+    "future_pair_table_format": "csv",
+    "scaffold_future_pair_ledger": "REPLACE_WITH_REPAIRED_SCAFFOLD_AUDIT/future_pair_scaffold_coldness_audit.tsv.gz",
+    "scaffold_future_pair_ledger_format": "tsv",
+    "mmseqs_future_target_ledger_format": "tsv",
+    "mmseqs_future_target_ledgers": {
+      "0.30": "data/interim/mmseqs2_target_coldness_v1_1_pmid_verified/identity_0_30/future_target_coldness_audit.tsv.gz",
+      "0.50": "data/interim/mmseqs2_target_coldness_v1_1_pmid_verified/identity_0_50/future_target_coldness_audit.tsv.gz",
+      "0.70": "data/interim/mmseqs2_target_coldness_v1_1_pmid_verified/identity_0_70/future_target_coldness_audit.tsv.gz"
+    }
+  },
+  "output_dir": "REPLACE_WITH_NEW_OUTPUT_DIRECTORY_AFTER_SCAFFOLD_REPAIR",
+  "columns": {
+    "future_pair_key": "canonical_pair_key",
+    "future_target": "uniprot_canonical_accession",
+    "future_decision": "decision",
+    "future_label_status": "label_status",
+    "future_unrecorded_pair_policy": "unrecorded_pair_policy",
+    "scaffold_pair_key": "canonical_pair_key",
+    "scaffold_cold_flag": "audit_scaffold_cold_under_selected_policy",
+    "scaffold_outcome": "audit_outcome",
+    "scaffold_reason": "audit_eligibility_or_exclusion_reason",
+    "target_accession": "uniprot_canonical_accession",
+    "target_cold_flag": "is_future_target_homology_cold_candidate",
+    "target_status": "future_target_coldness_status"
+  },
+  "policies": {
+    "expected_future_decision": "strict_post_cutoff_future_candidate",
+    "require_expected_future_decision": true,
+    "p1_candidate_marker": "P1_candidate_only",
+    "require_p1_candidate_marker": true,
+    "require_exact_scaffold_pair_keyset": true,
+    "require_exact_mmseqs_target_keyset": true,
+    "unrecorded_pair_policy": "Emit only already-observed strict temporal future pairs. Never enumerate, create, or label an unrecorded compound-target pair as negative.",
+    "label_policy": "Preserve P1 candidate status. This join never promotes a P1 candidate to P2/P3, a direct-binding label, or a final supervised positive."
+  }
+}
+

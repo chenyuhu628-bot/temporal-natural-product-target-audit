@@ -1,0 +1,33 @@
+{
+  "added_file_sha256": {
+    "governance/implementation_amendment_20260728_01.md": "4be610388eedef06eefa54d2c054a718362ca837fc8b9ada33dedba214b19b0a",
+    "scripts/build_asof_corrective_bundle_v1_1.py": "6938a1bcdc3b9cc2847e4bfdb8783fe03c7673385f9ed2d7044635752753ba23",
+    "scripts/lock_implementation_amendment_v1_1.py": "8824b95bd64721b0dc32884aac6ad21e3f39d404294b519ca0e3ca3a51fa67b4"
+  },
+  "amendment_id": "implementation_amendment_20260728_01",
+  "amendment_timing": "after import-only failure and before any corrective output or result generation",
+  "base_implementation_lock": {
+    "path": "manifests/implementation_code_lock_v1.json",
+    "sha256": "2747849783837ad4e282ed16c4b5a6ebeb2f0811587c64b753b521a266432772"
+  },
+  "environment": {
+    "explicit_path": "environment/conda-win-64-explicit.txt",
+    "explicit_sha256": "d98b20794b6ee0a7273412cb5986622c1285637cd59b989fcab3bdda9efc3bb5",
+    "receipt_path": "environment/environment-lock.json",
+    "receipt_sha256": "d96f1c45c72634ef289101074a791d731bf01d94817dc5979df64c51870ede24",
+    "versions": {
+      "numpy": "2.4.6",
+      "python": "3.11.15",
+      "rdkit": "2026.03.4",
+      "scikit_learn": "1.9.0"
+    }
+  },
+  "lock_state": "LOCKED_BEFORE_EXECUTION",
+  "locked_at_utc": "2026-07-28T08:03:40.377206+00:00",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "public_release_authorized": false,
+  "result_artifacts_generated_before_amendment_lock": false,
+  "schema_version": "1.1",
+  "scientific_protocol_changed": false
+}
+

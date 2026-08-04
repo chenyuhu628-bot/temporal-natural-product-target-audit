@@ -1,0 +1,28 @@
+{
+  "synthetic_only": true,
+  "compound_labels": ["SYNTH_COMPOUND_A", "SYNTH_COMPOUND_B"],
+  "target_labels": ["SYNTH_TARGET_A", "SYNTH_TARGET_B"],
+  "reference_labels": ["SYNTH_REFERENCE_PRE", "SYNTH_REFERENCE_POST"],
+  "cutoff": "2022-08-31",
+  "stages": [
+    {"id": "00", "script": "scripts/download_sources.py", "contract": "reject mismatched bytes or SHA-256"},
+    {"id": "01", "script": "reproduction/source_to_frozen/audit_npass_core.py", "contract": "retain only traceable synthetic human single-protein quantitative rows"},
+    {"id": "02", "script": "reproduction/source_to_frozen/fetch_pubmed_v3_only_dates.py", "contract": "preserve synthetic date precision and request receipts"},
+    {"id": "03", "script": "reproduction/source_to_frozen/build_evidence_tiers.py", "contract": "apply fixed A/B/C/U policy without direct-binding promotion"},
+    {"id": "04", "script": "reproduction/source_to_frozen/map_uniprot_target_sequences.py", "contract": "accept only one-to-one reviewed-human synthetic mappings"},
+    {"id": "05", "script": "reproduction/source_to_frozen/fetch_pubmed_v2_pmid_dates.py", "contract": "sort and hash the synthetic reference list"},
+    {"id": "06", "script": "reproduction/source_to_frozen/build_strict_temporal_pair_tables.py", "contract": "separate pre/post synthetic dates and emit no negatives"},
+    {"id": "07", "script": "reproduction/source_to_frozen/audit_chembl_entity_mapping.py", "contract": "require exact synthetic compound and target identity"},
+    {"id": "08", "script": "reproduction/source_to_frozen/audit_chembl31_historical_activities.py", "contract": "read-only audit and conservative leakage status"},
+    {"id": "09", "script": "reproduction/source_to_frozen/build_chembl31_future_leakage_gate.py", "contract": "one-to-one key coverage and disjoint decision strata"},
+    {"id": "10", "script": "reproduction/source_to_frozen/extract_chembl31_human_target_catalogue.py", "contract": "unique synthetic human single-protein catalogue"},
+    {"id": "11", "script": "reproduction/source_to_frozen/prepare_verified_temporal_cold_start_inputs.py", "contract": "source-version isolation and lexical structure tie break"},
+    {"id": "12", "script": "reproduction/source_to_frozen/derive_bemis_murcko_scaffolds.py", "contract": "distinguish valid, invalid, and empty synthetic structures"},
+    {"id": "13", "script": "reproduction/source_to_frozen/repair_invalid_scaffold_structures_from_npass_inchi.py", "contract": "exact regenerated-key repair only"},
+    {"id": "14", "script": "reproduction/source_to_frozen/audit_temporal_scaffold_coldness.py", "contract": "unresolved synthetic history fails closed"},
+    {"id": "15", "script": "reproduction/source_to_frozen/cluster_mmseqs2_target_coldness.py", "contract": "fixed identity/coverage grid and no label creation"},
+    {"id": "16", "script": "reproduction/source_to_frozen/combine_temporal_double_cold_audits.py", "contract": "exact future key-set join without enumerating pairs"},
+    {"id": "17", "script": "reproduction/source_to_frozen/build_author_run_successor_bundle.py", "contract": "minimal sorted input schemas and A-over-B tier rule"},
+    {"id": "18", "script": "code/corrective/build_asof_corrective_bundle_v1_1.py", "contract": "locked authoritative date-precision build"}
+  ]
+}

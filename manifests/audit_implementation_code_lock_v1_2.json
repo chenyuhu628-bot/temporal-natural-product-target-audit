@@ -1,0 +1,21 @@
+{
+  "added_file_sha256": {
+    "governance/audit_implementation_amendment_20260728_04.md": "410e61be86d0cd67ee37fe37e1de68206ffe994db69d9b2948bb181477db85ad",
+    "scripts/audit_corrective_before_after_v1.py": "3fd8b365e6910627785f50a4c0b333001c2b00dee796d3e9e598dc3370b0ee3a",
+    "scripts/lock_audit_implementation_amendment_v1_2.py": "5d2d724a4432ef05868875f1744c4cb5d9e9cfc8f2e1f7671a04057b654802ad",
+    "scripts/prepare_source_audit_inputs_v1.py": "b3e28d5c570c07d5a7fd03dcc2f3584d07d1104025ea1aada6285196f4946507"
+  },
+  "amendment_id": "audit_implementation_amendment_20260728_04",
+  "base_lock": {
+    "path": "manifests/implementation_code_lock_v1_1.json",
+    "sha256": "3911ae5a3d07933984829eb774560c0ebdfdbfaaeed871c0a402ac03148a39e4"
+  },
+  "identifier_release_authorized": false,
+  "lock_state": "LOCKED_BEFORE_AUDIT_EXECUTION",
+  "locked_at_utc": "2026-07-28T08:28:46.125269+00:00",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "schema_version": "1.2",
+  "scientific_protocol_changed": false,
+  "score_or_metric_generation_changed": false
+}
+

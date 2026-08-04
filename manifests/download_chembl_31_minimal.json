@@ -1,0 +1,33 @@
+[
+  {
+    "source_dataset": "ChEMBL",
+    "version": "31",
+    "database_last_update": null,
+    "release_date": "2022-08-15",
+    "publication_online_date": null,
+    "file": "chembl_31_chemreps.txt.gz",
+    "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/chembl_31_chemreps.txt.gz",
+    "purpose": "historical compound structures for full standard-InChIKey matching",
+    "downloaded_at": "2026-07-15T08:47:00.549321+00:00",
+    "bytes": 224312348,
+    "sha256": "74cae7cf3242b26a07ea6deea1a9547572036c25eb8946bfff3200d3e855743c",
+    "expected_sha256": "74cae7cf3242b26a07ea6deea1a9547572036c25eb8946bfff3200d3e855743c",
+    "event": "downloaded"
+  },
+  {
+    "source_dataset": "ChEMBL",
+    "version": "31",
+    "database_last_update": null,
+    "release_date": "2022-08-15",
+    "publication_online_date": null,
+    "file": "chembl_uniprot_mapping.txt",
+    "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/chembl_uniprot_mapping.txt",
+    "purpose": "historical UniProt-to-ChEMBL target mapping",
+    "downloaded_at": "2026-07-15T08:47:05.782549+00:00",
+    "bytes": 938764,
+    "sha256": "0828844c10badd8bb09525e12ba0c320c120e38f830069301fada70224c3aa0a",
+    "expected_sha256": null,
+    "event": "downloaded"
+  }
+]
+

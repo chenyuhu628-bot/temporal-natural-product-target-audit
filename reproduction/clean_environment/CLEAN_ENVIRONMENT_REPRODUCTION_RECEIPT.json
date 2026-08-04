@@ -1,0 +1,100 @@
+{
+  "authoritative_analysis_chain": {
+    "steps": 12,
+    "verification_status": "PASS"
+  },
+  "clean_environment_author_side_reproduction": "COMPLETED",
+  "comparison_status_counts": {
+    "ADDITIONAL_DIAGNOSTIC_OUTPUT": 1,
+    "BYTE_IDENTICAL": 73,
+    "COMPLETED_EXACT_SHA256": 16,
+    "EXPECTED_CONTROL_METADATA_DIFFERENCE": 1,
+    "RENDERING_DIFFERENCE_SOURCE_DATA_EXACT": 5
+  },
+  "controlled_deviations": [
+    "The portable public pu_retrieval_metrics.py differs from its historical line-ending hash; the clean run retained both the release source and the exact historical execution copy.",
+    "The historical v1.4 document-component custody wrapper binds old manifests; the clean run used the locked v1.3 statistical implementation with fresh manifests and a release-local receipt.",
+    "Deterministic recompression changed gzip container hashes in the unresolved-bounds preparation while decompressed content remained exact.",
+    "Table S6 differs only in fresh paths, runtime, memory, and control hashes.",
+    "Five regenerated PNGs are not byte-identical because of rendering/font metrics; every figure source-data TSV is exact and Figure 5 is pixel-identical.",
+    "The optional aggregate RDKit warning-count addendum was not regenerated because transient stderr was not retained; the 84-check core structure-policy validator passed."
+  ],
+  "created_at_utc": "2026-08-04T09:30:30.609822+00:00",
+  "environment": {
+    "environment_lock_sha256": "e33d199c6ea37874202a627baa11ad180162917e187094826a26085c44f922f6",
+    "os": "Windows-10-10.0.22631-SP0",
+    "packages": {
+      "biopython": "1.87",
+      "matplotlib": "3.11.0",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "rdkit": "2026.3.4",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1"
+    },
+    "python": "3.11.15"
+  },
+  "execution_incidents_retained": [
+    "First concurrent ChEMBL archive download was corrupt and quarantined; a fresh serial official download matched and was used.",
+    "A first scoring attempt used a flattened layout and failed closed; the correct original-layout run passed.",
+    "Top-100 exhaustive attempts failed until the clean environment DLL paths were activated; the activated run passed and numeric outputs were exact.",
+    "The tie-aware outer shell timed out while its child continued to completion; completed outputs and both failure/completion evidence were retained.",
+    "The before/after audit used the historical pre-correction rank and metric only as an explicit comparison reference, not as a scientific input to the corrected run."
+  ],
+  "independent_third_party_reproduction": "NOT YET PERFORMED",
+  "manuscript_aggregate_validation": {
+    "checks": 17,
+    "status": "PASS"
+  },
+  "revision_and_v4_validations": [
+    {
+      "check_count": 19,
+      "relative_path": "revision_date_policy_v1_20260729/VALIDATION.json",
+      "sha256": "cede8d9ccdc74ad0a0f90aca91372c69155c752d14cc7bf905d656554738b1e6",
+      "status": "PASS"
+    },
+    {
+      "check_count": 84,
+      "relative_path": "revision_structure_policy_v1_20260729/validation_report.json",
+      "sha256": "8adb580d45fd67af6ebebbb694d879a957f722ea5308d3b2c2b851f660f2d1e1",
+      "status": "PASS"
+    },
+    {
+      "check_count": 12,
+      "relative_path": "revision_tie_aware_v1_20260729/validation/output_validation_receipt_clean.json",
+      "sha256": "5bc7e986eb9608e59ebe129575876eca9f30f09b1ab0ff02593dea0cbcf43bac",
+      "status": "PASS"
+    },
+    {
+      "check_count": 26,
+      "relative_path": "revision_unresolved_bounds_v1_20260729/VALIDATION.json",
+      "sha256": "66a5b9363f6c927a9a4da6f8f759563a6a4dfddba66a6ba36c99ab174cdb8e6c",
+      "status": "PASS"
+    },
+    {
+      "check_count": 12,
+      "relative_path": "revision_weight_policy_v1_20260729/validation/output_validation_receipt_clean.json",
+      "sha256": "ea78203161052970a96104495f3720d50def5150d04b069900f023b2eb4d4c18",
+      "status": "PASS"
+    },
+    {
+      "check_count": 56,
+      "relative_path": "revision_review_matrix_v1_20260729/validation_report.json",
+      "sha256": "6a7fa75cdabb1c48e895e7b2c01693004513e859a716677690a8cc21ad47c654",
+      "status": "PASS"
+    },
+    {
+      "check_count": 12,
+      "relative_path": "manuscript_molecular_diversity_v4_20260729/tables/major_revision_table_validation_v4.json",
+      "sha256": "bc9ff4e38e0c2708466b58d935d72c2be59e688209135935992f4685aef24159",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "clean_environment_author_reproduction_v1",
+  "source_to_frozen": {
+    "locked_inputs_exact_sha256": 16,
+    "required_inputs": 16,
+    "stages": 19
+  },
+  "status": "COMPLETED"
+}

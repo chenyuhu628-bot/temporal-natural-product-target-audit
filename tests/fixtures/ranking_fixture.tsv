@@ -1,0 +1,8 @@
+query_label	target_label	score	observed_candidate
+query_alpha	target_one	0.9	1
+query_alpha	target_two	0.5	0
+query_alpha	target_three	0.4	1
+query_beta	target_one	0.2	0
+query_beta	target_two	0.1	1
+query_beta	target_three	0.0	0
+

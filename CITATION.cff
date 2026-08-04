@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software release and the associated article."
+title: "Software for a source-aware date-precision audit of temporal natural-product target retrieval"
+type: software
+version: 1.0.0
+authors:
+  - given-names: Chenyu
+    family-names: Hu
+license: MIT
+date-released: 2026-08-04
+abstract: "Reproducibility code for a source-aware date-precision audit of temporal natural-product target retrieval."
+keywords:
+  - cheminformatics
+  - natural products
+  - target retrieval
+  - temporal validation
+  - reproducibility

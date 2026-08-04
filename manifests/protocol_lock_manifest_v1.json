@@ -1,0 +1,22 @@
+{
+  "execution_mode": "author_run_non_independent_corrective_successor",
+  "files_sha256": {
+    "PROTOCOL_STATUS.md": "ef1d2d5e7ec1a3da44ca22739dfe42d36bec6127f5ef1a9b18a877cd318986dd",
+    "configs/asof_cutoff_rebuild_spec_v1.json": "64807df0a9c04c8e9ff47b575f6731ce8eed9e66a91121c7ecbfdef79223b8d6",
+    "execution/execution-runbook.md": "1f08c46b83be3225843d353bbc9161f67c12f13bc8a5c4f3a92d20a58595f642",
+    "figures/data-manifest.md": "869f61015ef00882e4905baf9ee2983317c404d249c6915ff8f4426036492a98",
+    "governance/project_lead_authorization_20260728.md": "1df4f36eeeed3d2f25278f190811243721f1cf2d8615bd5549f8d22f20953cc3",
+    "plan/experiment-protocol.md": "ded5ef1f0615406fb93832c2614049ae502bb78061c5067a190cb5c2d86b203f",
+    "plan/review/method-experiment-traceability.md": "56221c41e0bede29893c335be03612ed2f8effe1bc4bf34ddca567ce79045a91",
+    "plan/stage-gates.md": "ed5327a3d30301aa4cfbf400fa4d87fc95d2d1bc24a4f5b375aad131b0281bd7",
+    "scripts/lock_protocol.py": "3f0bc409288d3107c4b2e8db70495613de9690f61b3f6b2bad0d68134aa47b61",
+    "tables/table-schema.md": "61da07750c2070e4773c1dff663832c26fbaa326ddecfcb4913ff7dc4a0b14f6"
+  },
+  "legacy_artifacts_mutated": false,
+  "lock_timing": "before corrective result generation",
+  "locked_at_utc": "2026-07-28T07:40:08.271513+00:00",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "public_release_authorized": false,
+  "schema_version": "1.0"
+}
+

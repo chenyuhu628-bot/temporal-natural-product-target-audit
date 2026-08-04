@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "npass_strict_ab_doublecold_successor_v1_20260719",
+  "created_local_date": "2026-07-19",
+  "protocol_state": "DRAFT_PENDING_HUMAN_AUTHORIZATION",
+  "execution_authorized": false,
+  "endpoint_access_status": "not_authorized",
+  "results_generated": false,
+  "figures_requested": false,
+  "study_owner_instruction": {
+    "recorded": true,
+    "source": "direct user statement in this project conversation on 2026-07-19",
+    "scope": "AI-assisted internal successor preparation and project-owned code work",
+    "does_not_establish": [
+      "source-rights clearance",
+      "independent human evaluation",
+      "public release permission"
+    ]
+  },
+  "study_type": "separately governed successor strict A/B double-cold observed-candidate retrieval evaluation",
+  "claim_boundary": [
+    "not a rerun of the frozen outer test",
+    "not independent external validation",
+    "not formal preregistration",
+    "not human P3 review",
+    "not direct-binding or biological validation",
+    "not an authorization to release source-derived data"
+  ],
+  "frozen_reference_hashes": {
+    "configs/evidence_policy_v1_1.json": "5a50453bd08f7d0a344b0629c4310e993eb491d68fbe606bf3caae5d11951f54",
+    "configs/pu_baseline_protocol_v1_1.json": "b17828f655cdd6e6bd5e0db0d2a165cb48797ad3eaf4567bd538573cadae28c1",
+    "configs/pu_pair_neighbor_transfer_v1_2.json": "490a582502a842fba9265e7abbe9760c0f41ea492f5d0feb9cf9dd091289b4f2",
+    "configs/temporal_double_cold_join_v1.json": "54999122e75aea024e6a1f47f218226e8b9ac6e69ee9c9cbe2b3c5e0b13f58a5",
+    "scripts/run_strict_ab_pu_retrieval_baselines.py": "9684558cc52d70d368d04c4f4ae0e9c094f05afdcf3e9be30b9beedd9c3b5c22",
+    "docs/strict_ab_p1_benchmark_status_20260715.md": "f60dabe71d7f817c558b71ee77404df532d0ae0bb826466df27d872d26541be8",
+    "docs/npass_temporal_doublecold_pu_new_chat_handoff_v1_20260718.md": "2c1fe2e99c19b1a1d957470efc817cda1e4ca352027e9d1ad1032329e0b8a656",
+    "docs/temporal_scaffold_coldness_audit.md": "b87ff16b24542e4aaa6a0bc7f82a8ae56fe2867e43fe207393a9e92dc6cfd13e",
+    "docs/mmseqs2_target_coldness_audit.md": "51126bcaccc6d6b193eef9f8d9d1c78d6976b03d70e25f58c1dca630f40d4224",
+    "scripts/pu_baseline_io.py": "142414029d4e1e034861fc2b9fbcfa394622af0ac764874fcb9cf7ad89ff6f02",
+    "scripts/pu_retrieval_metrics.py": "7e40e80c3203a4a6cf95ca675cc9c333168f8feb234449856f26b5e132ec3165",
+    "scripts/pu_retrieval_scores.py": "092066311c294ab6f428d17b49d3e71af95cd2981c9ba9b8db4b9a37dafde19d",
+    "scripts/pu_pair_neighbor_transfer_scores_v1_2.py": "d971fe7d10e465a44b8d026effa79c175f8853986461167158b66786c7e15ac2",
+    "scripts/derive_bemis_murcko_scaffolds.py": "ae662362847daa928d9ee95c83c1550d69a48601390dc6009748ad1c45a49c4e",
+    "scripts/audit_temporal_scaffold_coldness.py": "e3a1694d915940d44fc634f7642cbfd5aa9fc082787c40cd5c119a544f37d27d",
+    "scripts/cluster_mmseqs2_target_coldness.py": "a642e07d8b4ebaaef2b70f277b41281a628b7943720cd297670f298eaf42592d"
+  },
+  "endpoint": {
+    "pair_identity": "full InChIKey | canonical UniProt accession",
+    "global_temporal_cutoff": "2022-08-31",
+    "temporal_rule": "PMID-backed, PubMed-found, day-precise evidence wholly on one side of the cutoff; mixed or unresolved timing excluded",
+    "strict_tiers": {
+      "A_affinity_candidate": {
+        "relation": "=",
+        "endpoints": ["Ki", "Kd"],
+        "numeric_molar_required": true,
+        "pair_weight": 1.0,
+        "direct_binding_claim_allowed": false
+      },
+      "B_quantitative_functional_candidate": {
+        "relation": "=",
+        "endpoints": ["IC50", "EC50"],
+        "numeric_molar_required": true,
+        "pair_weight": 0.7,
+        "direct_binding_claim_allowed": false
+      }
+    },
+    "excluded": [
+      "C_contextual_functional_exact",
+      "AC50",
+      "Potency",
+      "non-exact or censored records",
+      "missing or non-numeric records",
+      "invented negatives"
+    ],
+    "duplicate_pair_rule": "retain one best A/B tier; never sum source rows",
+    "unrecorded_pair_rule": "unlabeled_not_negative",
+    "strict_split_contract": {
+      "historical_decision": "strict_pre_cutoff_training_candidate",
+      "endpoint_decision": "strict_post_cutoff_future_candidate",
+      "pair_key_disjointness_required": true,
+      "inchikey_target_tuple_disjointness_required": true,
+      "only_A_or_B_tiers_permitted": true
+    },
+    "c31_historical_activity_leakage_gate": {
+      "required_for_endpoint": true,
+      "allowed_status": "steward-approved no historical activity outcome",
+      "role": "leakage filter only; not external validation"
+    }
+  },
+  "candidate_universe": {
+    "catalogue": "C31 human SINGLE PROTEIN accession catalogue",
+    "catalogue_version": "chembl31_human_target_catalogue_v1",
+    "expected_target_count": 4123,
+    "sequence_snapshot": "component_sequences db_version 2022_02",
+    "source_role": "candidate and feature universe only; no activity labels exposed to the analysis executor",
+    "source_authorization_required": true
+  },
+  "cold_algorithm": {
+    "scaffold": {
+      "primary_policy": "strict_full_history_coverage",
+      "tool": "RDKit Chem.MolFromSmiles plus MurckoScaffold.GetScaffoldForMol",
+      "future_eligibility": [
+        "canonical pair absent from strict history",
+        "scaffold_status equals ok",
+        "non-empty scaffold key",
+        "key absent from valid complete strict-history scaffold groups"
+      ],
+      "excluded_statuses": ["invalid_smiles", "acyclic_or_empty_bemis_murcko"],
+      "missing_or_inconsistent_history_mapping": "primary scope not estimable",
+      "mapped_history_only": "exploratory only, never replaces primary"
+    },
+    "homology": {
+      "tool": "MMseqs2",
+      "thresholds": ["0.30", "0.50", "0.70"],
+      "cluster_parameters": ["--seq-id-mode 0", "-c 0.80", "--cov-mode 0", "--cluster-mode 0"],
+      "direct_search_parameters": ["--filter-hits 1", "-s 7.5", "--max-seqs 1000000"],
+      "union_fasta_policy": "every and only historical/future target accession exactly once",
+      "cold_requires_all": [
+        "future accession absent from historical target membership",
+        "union cluster contains no historical target",
+        "no direct future-to-historical alignment passing the locked rule"
+      ],
+      "candidate_universe_changed_by_coldness": false
+    }
+  },
+  "cold_scopes": [
+    {
+      "id": "temporal_strict_ab",
+      "rule": "strict A/B post-cutoff observed-candidate relation"
+    },
+    {
+      "id": "scaffold_cold_strict_ab",
+      "rule": "temporal strict A/B relation plus a locked new Bemis-Murcko scaffold audit"
+    },
+    {
+      "id": "double_cold_0_30",
+      "rule": "scaffold cold plus the strict MMseqs2 homology-cold flag at identity threshold 0.30"
+    },
+    {
+      "id": "double_cold_0_50",
+      "rule": "scaffold cold plus the strict MMseqs2 homology-cold flag at identity threshold 0.50"
+    },
+    {
+      "id": "double_cold_0_70",
+      "rule": "scaffold cold plus the strict MMseqs2 homology-cold flag at identity threshold 0.70"
+    }
+  ],
+  "baseline_names": [
+    "weighted_target_popularity",
+    "sequence_3mer_transfer",
+    "weighted_morgan_transfer",
+    "structure_sequence_pair_neighbor"
+  ],
+  "baselines": {
+    "weighted_target_popularity": "historical target degree with strict A=1.0 and B=0.7",
+    "sequence_3mer_transfer": "maximum weighted character-3-mer TF-IDF cosine transfer from historical targets",
+    "weighted_morgan_transfer": "maximum weighted Morgan Tanimoto transfer, radius 2, 2048 bits",
+    "structure_sequence_pair_neighbor": "maximum historical-pair product of evidence weight, Morgan Tanimoto, and top-100 3-mer TF-IDF cosine"
+  },
+  "out_of_scope_baselines": [
+    "unweighted_target_popularity is not in the retained primary four",
+    "dual encoders",
+    "BCE comparators",
+    "new models",
+    "hyperparameter searches",
+    "post-result feature changes"
+  ],
+  "prediction_policy": {
+    "historical_targets_for_same_query_compound": "masked",
+    "common_candidate_universe_for_all_baselines": true,
+    "common_evaluable_query_set_for_all_baselines": true,
+    "tie_break": {
+      "method": "SHA-256 UTF-8 salt|query_id|target_id; first 8 digest bytes as unsigned big-endian value; descending score then ascending tie value",
+      "salt": "npass_strict_ab_doublecold_successor_v1_20260719",
+      "status": "fixed in this draft before successor endpoint construction; D2 confirms and may not change it"
+    },
+    "prediction_before_endpoint_unsealing": true
+  },
+  "metrics": {
+    "unit": "query compound",
+    "aggregation": "compound macro average",
+    "primary": "Recall@50",
+    "secondary": ["Recall@10", "NDCG@10", "NDCG@50", "MRR"],
+    "relevance": "binary observed strict A/B candidate relation",
+    "scope_query_rule": "include a query only if it has at least one sealed endpoint relation in that scope; only scope relations are relevant",
+    "candidate_count_smaller_than_k": "use min(K, eligible_candidate_count)",
+    "not_allowed": ["AUROC", "ordinary AUPR", "calibration", "binary classification accuracy"]
+  },
+  "statistics": {
+    "comparison_of_focus": "structure_sequence_pair_neighbor minus weighted_morgan_transfer",
+    "all_double_cold_thresholds_reported": true,
+    "all_unordered_baseline_pairs_reported_in_supplement": true,
+    "bootstrap_unit": "query compound cluster",
+    "bootstrap_replicates": 10000,
+    "prng": "PCG64",
+    "seed": 20260719,
+    "interval": "95% percentile",
+    "n_zero_rule": "not estimable",
+    "n_one_rule": "report degenerate interval and label n=1 descriptive only",
+    "inference_language": "descriptive precision interval; no p values or superiority decision"
+  },
+  "required_reporting": {
+    "all_scopes_baselines_metrics": true,
+    "candidate_relations_queries_targets": true,
+    "candidate_space_summary": "median, IQR, minimum, maximum",
+    "zero_and_failure_accounting": true,
+    "all_exclusion_reasons": true,
+    "non_estimable_cells": true,
+    "no_figures_in_current_phase": true
+  },
+  "human_gate_requirements": ["D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7"],
+  "successor_implementation": {
+    "new_runner_required": true,
+    "legacy_strict_runner_allowed": false,
+    "reason": "legacy runner lacks pair-neighbor scoring and cold-mask evaluation"
+  },
+  "receipt_policy": {
+    "draft_templates_immutable": true,
+    "real_receipt_location": "governance/receipt_records/",
+    "d2_lock_manifest_required": true
+  },
+  "release_policy": "source data and per-query outputs remain restricted by default; only D7-approved aggregate manuscript metrics may be shared, otherwise source-at-acquisition/reconstruction only"
+}

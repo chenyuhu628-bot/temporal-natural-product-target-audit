@@ -1,0 +1,14 @@
+name: npass_temporal_release
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy=2.4.6
+  - pandas=3.0.3
+  - scikit-learn=1.9.0
+  - scipy=1.17.1
+  - rdkit=2026.03.4
+  - biopython=1.87
+  - matplotlib=3.11.0
+  - pillow

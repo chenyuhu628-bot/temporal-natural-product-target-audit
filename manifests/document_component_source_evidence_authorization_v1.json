@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": "document_component_source_evidence_authorization_v1_20260728",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "authorization_scope": "local_read_only_document_dependence_audit",
+  "approved_under": "project_lead_authorization_20260728",
+  "endpoint_pair_filter_required": true,
+  "numeric_pmid_rows_only": true,
+  "external_redistribution_authorized": false,
+  "identifier_release_authorized": false,
+  "source_evidence": {
+    "path": "LOCAL_RESTRICTED_INPUT_NOT_DISTRIBUTED/future_active_source_strict_primary_evidence.tsv.gz",
+    "basename": "future_active_source_strict_primary_evidence.tsv.gz",
+    "bytes": 37393,
+    "sha256": "e800a181976de63a7ee027ed929576ae16fd925b0f458bff414d41075cefa21f"
+  },
+  "output_boundary": "aggregate_only_no_query_pair_target_or_pmid_identifiers",
+  "created_at_utc": "2026-07-28T08:45:00Z"
+}
+

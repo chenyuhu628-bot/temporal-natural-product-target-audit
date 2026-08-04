@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "lock_state": "LOCKED_BEFORE_SOURCE_CONCENTRATION_RESULT_INSPECTION_AND_BEFORE_COMPONENT_BOOTSTRAP_EXECUTION",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "base_protocol_lock": {
+    "path": "manifests/protocol_lock_manifest_v1.json",
+    "sha256": "96befee13ae1d41ad433c8697fac92ccd30fb25e24c3cf1279c6b4b7e040abd9"
+  },
+  "locked_files": {
+    "governance/document_cluster_audit_amendment_20260728_05.md": "43f4b9c588e1c30c37552598a17e85a1bf3edec74adf7cb7a1aa96c266f77557",
+    "audit_suite_v1_20260728/schemas/document_cluster_bootstrap_contract.md": "fa271ccd9349fc869c88bc663d7e423d548a734ca033f1a7453ac17f79fece3d",
+    "manifests/document_component_source_evidence_authorization_v1.json": "7bbb511d034a96edeaaadc9e86d28176b17007f9fe7aece6bc0573037b2da42f"
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "prng": "PCG64",
+    "seed": 20260719,
+    "resampling_unit": "scope_specific_query_pmid_bipartite_connected_component",
+    "interval": "95_percentile"
+  },
+  "scientific_protocol_changed": false,
+  "identifier_release_authorized": false,
+  "external_redistribution_authorized": false,
+  "locked_at_utc": "2026-07-28T08:46:00Z"
+}
+

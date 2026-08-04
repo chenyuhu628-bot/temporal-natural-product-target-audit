@@ -1,0 +1,59 @@
+[
+  {
+    "source_dataset": "NPASS",
+    "version": "3.0",
+    "database_last_update": null,
+    "release_date": "2025-06-15",
+    "publication_online_date": null,
+    "file": "NPASS3.0_naturalproducts_generalinfo.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_naturalproducts_generalinfo.txt",
+    "purpose": "compound identifiers and names",
+    "downloaded_at": "2026-07-15T07:28:46.382074+00:00",
+    "bytes": 48379276,
+    "sha256": "fc3fdcb41423d2d654552b638800658ad90441509bb58516c2290edcf4ae2d83",
+    "event": "downloaded"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "3.0",
+    "database_last_update": null,
+    "release_date": "2025-06-15",
+    "publication_online_date": null,
+    "file": "NPASS3.0_naturalproducts_structure.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_naturalproducts_structure.txt",
+    "purpose": "SMILES, InChI, and InChIKey",
+    "downloaded_at": "2026-07-15T07:30:24.794379+00:00",
+    "bytes": 64734351,
+    "sha256": "5f2ca5c3fcd0386d65a31146122e4c8bf6dfcbea7a786ea01e6be764d69f65dc",
+    "event": "downloaded"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "3.0",
+    "database_last_update": null,
+    "release_date": "2025-06-15",
+    "publication_online_date": null,
+    "file": "NPASS3.0_activities.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_activities.txt",
+    "purpose": "activity records, targets, values, and references",
+    "downloaded_at": "2026-07-15T07:33:07.055400+00:00",
+    "bytes": 105252592,
+    "sha256": "2e1e01166b6571f0e77c8e1a1a2f4ee48c17fb8af92be024b30d207e27a289c2",
+    "event": "downloaded"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "3.0",
+    "database_last_update": null,
+    "release_date": "2025-06-15",
+    "publication_online_date": null,
+    "file": "NPASS3.0_target.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_target.txt",
+    "purpose": "target identifiers and external cross-references",
+    "downloaded_at": "2026-07-15T07:33:10.552404+00:00",
+    "bytes": 663452,
+    "sha256": "e0c779601f8b0868779a888f2bfc9aafb76d7a1e527dbeec0031da7a52c88347",
+    "event": "downloaded"
+  }
+]
+

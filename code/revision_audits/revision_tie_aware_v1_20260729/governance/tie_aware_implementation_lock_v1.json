@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "lock_state": "LOCKED_BEFORE_REAL_INPUT_EXECUTION",
+  "locked_at_utc": "2026-07-29T08:53:40.0822732Z",
+  "parent_protocol_sha256": "bd4902476160cc7c5cbacaf0cfd0f1a28c5300bde22232b3a2cc6c1f3c143dc2",
+  "local_plan_sha256": "43165fdb9dd6436344b72fc9049dd83e1fceac68a722f38493f4fa69f6aead10",
+  "implementation_files": {
+    "PROTOCOL.md": "0e71f2c2989a8c2b4befdaff49ac5eec8ae9c01ae92e206d20d0511d43f5b507",
+    "governance/preexecution_synthetic_test_receipt_v1.json": "ea857f0933d2d911c2732f60b2c3dfeb3f2ba4f7a04819750099c7c52bdbd8f7",
+    "scripts/run_tie_aware_analysis_v1.py": "91de65c99704f0b2cccd5c8a3a71d4c573904041249a234e2dca5c91fd2c9395",
+    "scripts/validate_tie_aware_outputs_v1.py": "a45a8029b6e34530cde4c52027b37ee7b30e09cd406fc6b1dd819e3a24550290",
+    "tests/test_tie_aware_analysis_v1.py": "108e65455327c142faeafbc92320593b95020839e1a421585736982de9f06088"
+  },
+  "synthetic_test_receipt": {
+    "basename": "preexecution_synthetic_test_receipt_v1.json",
+    "sha256": "ea857f0933d2d911c2732f60b2c3dfeb3f2ba4f7a04819750099c7c52bdbd8f7",
+    "status": "PASS",
+    "tests_passed": 8
+  },
+  "prelock_disclosure": {
+    "existing_fixed_salt_results_were_visible": true,
+    "aggregate_tie_degeneracy_counts_were_visible": true,
+    "real_tie_aware_expected_metrics_were_computed": false,
+    "real_component_bootstrap_was_run": false,
+    "implementation_testing_used_synthetic_data_only": true
+  },
+  "parent_protocol_alignment": {
+    "analysis_A_exact_tie_aware_retrieval": true,
+    "analysis_B_dependence_uncertainty_and_zero_hit_bounds": true,
+    "homology_0_50_0_70_identical_masks_displayed_once": true,
+    "all_outputs_aggregate_only": true
+  },
+  "actual_output_contract": {
+    "tie_aware_metrics_rows": 48,
+    "three_mer_operability_rows": 4,
+    "double_cold_query_hit_upper_bound_rows": 8,
+    "uncertainty_estimand_rows": 4
+  },
+  "identifier_release_authorized": false,
+  "external_redistribution_authorized": false
+}

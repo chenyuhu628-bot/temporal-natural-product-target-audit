@@ -1,0 +1,37 @@
+{
+  "added_file_sha256": {
+    "audit_suite_v1_20260728/scripts/audit_document_component_bootstrap_v1_4.py": "4242962c338bdb8f41ed46c4961f56e3d269e8dd85c76219a8d8cf1ce771b6e4",
+    "audit_suite_v1_20260728/tests/test_document_component_bootstrap_v1_4.py": "9a2a1a158d3533015727061539bf625c90a23b2708aceb7da576d207547c53a4",
+    "governance/document_cluster_audit_fail_closed_amendment_20260728_07.md": "c5e775b3953eeacd9eb19d13969ae02096ea4250ea8e21deaf4b76a042753126",
+    "manifests/document_component_audit_spec_lock_v1.json": "c36dc3a6efbe304b7fbfef1a59d4acddc751e1281351b84e3b1341f4978b2d22",
+    "manifests/document_component_source_evidence_authorization_v1.json": "7bbb511d034a96edeaaadc9e86d28176b17007f9fe7aece6bc0573037b2da42f",
+    "scripts/lock_document_component_audit_implementation_v1_4.py": "2e2c2f762e0fe9813681ba96b1f4f7619dcdb85320c42410b857ad53de9c7325"
+  },
+  "amendment_id": "document_cluster_audit_fail_closed_amendment_20260728_07",
+  "base_lock": {
+    "path": "manifests/document_component_audit_implementation_code_lock_v1_3.json",
+    "sha256": "fed2a1cbe7840411fc383e9fc6e132ed2dd20caea4f5bbad8666e3fd5044af2b"
+  },
+  "corrected_rank_rows_had_been_processed_before_lock": true,
+  "document_component_implementation_testing_before_lock": "synthetic_only",
+  "endpoint_score_rank_or_primary_metric_changed": false,
+  "external_redistribution_authorized": false,
+  "frozen_execution_input_sha256": {
+    "corrective_evaluation_manifest": "938d243eb8064e949e750d246855e27c88c73e2b20c91551760084994afa5148",
+    "corrective_score_manifest": "64df609ee4e83c6dd7efcb2285c38a0baec2240c99252d9849e25f1577379731",
+    "primary_query_bootstrap_baselines": "07e1adc7c14b073de4a06e576cb7435da1d280488547411b9ab07ba5197c4c8f",
+    "primary_query_bootstrap_focus_contrast": "151377f24ed98a82830cd3ce7f17617d4b7f42e863204153317958b6eed28590"
+  },
+  "identifier_release_authorized": false,
+  "lock_state": "LOCKED_BEFORE_DOCUMENT_COMPONENT_AUDIT_V1_4_EXECUTION",
+  "locked_at_utc": "2026-07-28T09:15:21.245909+00:00",
+  "primary_metric_rows_had_been_inspected_before_lock": true,
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "real_document_component_audit_executed_before_lock": false,
+  "schema_version": "1.4",
+  "scientific_protocol_changed": false,
+  "source_concentration_result_read_before_lock": false,
+  "source_evidence_rows_had_been_processed_before_lock": true,
+  "used_to_select_component_algorithm": false
+}
+

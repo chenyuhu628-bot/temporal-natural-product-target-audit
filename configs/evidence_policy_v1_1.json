@@ -1,0 +1,39 @@
+{
+  "version": "1.1",
+  "purpose": "More conservative record-level evidence screen after identifying uncontextualized AC50-heavy future records.",
+  "temporal_cutoff": "2022-08-31",
+  "identity_key": "full InChIKey | UniProt accession",
+  "tiers": {
+    "A_affinity_candidate": {
+      "definition": "Exact (=), numeric, molar-unit Ki or Kd record.",
+      "weight": 1.0,
+      "training_role": "high-weight candidate only; assay metadata/original paper required before saying direct binding"
+    },
+    "B_quantitative_functional_candidate": {
+      "definition": "Exact (=), numeric, molar-unit IC50 or EC50 record.",
+      "weight": 0.7,
+      "training_role": "weighted functional positive candidate; not direct-binding evidence"
+    },
+    "C_contextual_functional_exact": {
+      "definition": "Exact functional-effect record such as Inhibition, Activity, Emax, or Efficacy.",
+      "weight": 0.35,
+      "training_role": "sensitivity/context only; exclude from the primary label set pending assay review"
+    },
+    "Q_unverified_screen_or_other_exact": {
+      "definition": "Exact AC50/Potency record, an exact endpoint with missing molar semantics, or an unclassified exact endpoint.",
+      "weight": 0.0,
+      "training_role": "quarantine; not a primary or weighted positive until ChEMBL/primary-source assay context is checked"
+    },
+    "D_censored_or_unresolved": {
+      "definition": "Any non-exact relation, missing value, or non-numeric measurement.",
+      "weight": 0.0,
+      "training_role": "neither positive nor assumed negative in PU learning"
+    }
+  },
+  "affinity_endpoints": ["KI", "KD"],
+  "functional_potency_endpoints": ["IC50", "EC50"],
+  "contextual_functional_endpoints": ["INHIBITION", "ACTIVITY", "EMAX", "EFFICACY", "%INHIB (MEAN)", "%MAX (MEAN)", "RESIDUAL ACTIVITY"],
+  "quarantine_endpoints": ["AC50", "POTENCY"],
+  "molar_units": ["M", "MM", "UM", "NM", "PM", "FM"]
+}
+

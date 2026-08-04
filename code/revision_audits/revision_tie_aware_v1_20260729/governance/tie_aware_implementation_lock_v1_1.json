@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.1",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "lock_state": "LOCKED_BEFORE_REAL_INPUT_EXECUTION",
+  "locked_at_utc": "2026-07-29T09:05:23.7158507Z",
+  "amendment_id": "empty_prespecified_subset_fail_closed_amendment_v1_1",
+  "base_implementation_lock": {
+    "basename": "tie_aware_implementation_lock_v1.json",
+    "sha256": "f3e3edde1150a0ee35408c1deea97f3bf12f273afdd7715cc552edb2507898f9"
+  },
+  "failed_execution_receipt": {
+    "basename": "failed_execution_receipt_v1_20260729.json",
+    "sha256": "8db43d61787372532aab28c9807455ad60ccfe8fca9a67c56f81ba5197f2a18f"
+  },
+  "parent_protocol_sha256": "bd4902476160cc7c5cbacaf0cfd0f1a28c5300bde22232b3a2cc6c1f3c143dc2",
+  "local_plan_sha256": "43165fdb9dd6436344b72fc9049dd83e1fceac68a722f38493f4fa69f6aead10",
+  "implementation_files": {
+    "PROTOCOL.md": "0e71f2c2989a8c2b4befdaff49ac5eec8ae9c01ae92e206d20d0511d43f5b507",
+    "governance/failed_execution_receipt_v1_20260729.json": "8db43d61787372532aab28c9807455ad60ccfe8fca9a67c56f81ba5197f2a18f",
+    "governance/preexecution_synthetic_test_receipt_v1_1.json": "2f7d365a130a16ea50e9a188480cee07770dc91d66f67dd14224d9c9dbb29eb6",
+    "governance/tie_aware_implementation_lock_v1.json": "f3e3edde1150a0ee35408c1deea97f3bf12f273afdd7715cc552edb2507898f9",
+    "scripts/run_tie_aware_analysis_v1.py": "7643482f311f7602e53e7a61027671d0f4a68ab0278c5ab246494d64cc2a0463",
+    "scripts/validate_tie_aware_outputs_v1.py": "800905d515e4b014ef8f8c51e1eecfad8cb56ba875a272d3c130c30f950911a6",
+    "tests/test_tie_aware_analysis_v1.py": "186cd0c301765e7911cc3f89826459bacd0507e6c981ac6533e510ac341601b6"
+  },
+  "synthetic_test_receipt": {
+    "basename": "preexecution_synthetic_test_receipt_v1_1.json",
+    "sha256": "2f7d365a130a16ea50e9a188480cee07770dc91d66f67dd14224d9c9dbb29eb6",
+    "status": "PASS",
+    "tests_passed": 9
+  },
+  "new_information_disclosure": {
+    "known_before_amendment": "The scaffold-cold sequence-3mer score-operational subset is empty.",
+    "tie_aware_aggregate_metric_values_seen": false
+  },
+  "implementation_change": {
+    "empty_prespecified_subset": "retain planned cells with query_count=0, blank metrics, and explicit not-estimable statuses",
+    "tie_formulas_changed": false,
+    "bootstrap_estimands_changed": false,
+    "bootstrap_seeds_changed": false,
+    "endpoint_scope_or_score_changed": false,
+    "nonempty_cell_calculation_changed": false
+  },
+  "identifier_release_authorized": false,
+  "external_redistribution_authorized": false
+}

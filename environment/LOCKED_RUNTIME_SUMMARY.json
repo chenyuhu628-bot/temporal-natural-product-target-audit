@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "platform": "Windows win-64",
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "scikit_learn": "1.9.0",
+  "scipy": "1.17.1",
+  "rdkit": "2026.03.4",
+  "pandas": "3.0.3",
+  "biopython": "1.87",
+  "matplotlib": "3.11.0",
+  "explicit_lock": "environment/conda-win-64-explicit.txt",
+  "explicit_lock_sha256": "e33d199c6ea37874202a627baa11ad180162917e187094826a26085c44f922f6",
+  "note": "Sanitized summary. The original environment receipt was excluded because it contained local absolute paths."
+}

@@ -1,0 +1,8 @@
+{
+  "fixture": "ranking_fixture.tsv",
+  "tie_policy": "target_label_ascending",
+  "expected_macro_recall_at_2": 0.75,
+  "expected_query_count": 2,
+  "expected_row_count": 6
+}
+

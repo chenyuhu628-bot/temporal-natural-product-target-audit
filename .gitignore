@@ -1,0 +1,43 @@
+# Local source data and reconstructed row-level inputs
+work/
+data/
+sources/
+clean_reproduction/
+*.local.json
+
+# Restricted or third-party content
+*.sqlite
+*.db
+*.tar
+*.tar.gz
+*.zip
+*.fa
+*.fasta
+*.faa
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.bin
+*.npy
+*.npz
+
+# Generated row-level and ranking outputs
+*ranking*
+*rankings*
+*scoring_inputs*
+*endpoint_pairs*
+*historical_pairs*
+*sequences*
+*structures*
+*.part
+
+# Python and editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

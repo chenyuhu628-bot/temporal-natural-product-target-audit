@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_weight_policy_v1_20260729",
+  "protocol_id": "npass_strict_ab_major_revision_v4_20260729_analysis_D_weight_policy",
+  "lock_state": "LOCKED_BEFORE_CURRENT_CORRECTED_WEIGHT_SENSITIVITY_EXECUTION",
+  "locked_at_utc": "2026-07-29T09:17:39.8373103Z",
+  "analysis_role": "reviewer_requested_post_hoc_descriptive_policy_sensitivity",
+  "claim_boundary": "Author-run, outcome-visible, non-independent retrospective sensitivity. No weight is tuned or selected as superior, and no validation, biological, or discovery claim is created.",
+  "prelock_disclosure": {
+    "corrected_primary_weight_0_7_results_seen": true,
+    "older_pre_correction_weight_sensitivity_results_seen": true,
+    "older_analysis_used_as_current_result": false,
+    "current_corrected_weight_0_5_or_1_0_results_computed_before_lock": false,
+    "current_corrected_complete_rank_changes_seen_before_lock": false
+  },
+  "frozen_weight_variants": [
+    {
+      "key": "A1_B0_5",
+      "tier_A_weight": 1.0,
+      "tier_B_weight": 0.5,
+      "role": "lower_B_policy_sensitivity"
+    },
+    {
+      "key": "A1_B0_7_primary",
+      "tier_A_weight": 1.0,
+      "tier_B_weight": 0.7,
+      "role": "frozen_primary_reference"
+    },
+    {
+      "key": "A1_B1_0_all_equal",
+      "tier_A_weight": 1.0,
+      "tier_B_weight": 1.0,
+      "role": "all_equal_policy_sensitivity",
+      "alias": "all_equal_A1_B1"
+    }
+  ],
+  "forbidden_variants": [
+    "A_only",
+    "data-selected weights",
+    "any weight outside 0.5, 0.7, and 1.0"
+  ],
+  "frozen_scientific_inputs": {
+    "historical_pairs": {
+      "basename": "historical_pairs.tsv.gz",
+      "sha256": "cef748ae8ac277e49784d7e1fbf08e085beb14a84fc6c651a0fb8d99e88710d7",
+      "expected_relations": 4990,
+      "policy": "day_only_corrected_history"
+    },
+    "scoring_queries": {
+      "basename": "scoring_queries.tsv.gz",
+      "sha256": "0e6068d2e25cb3ea325656fb3517563788cd496e88cfaa3de761890fec9e9318",
+      "expected_queries": 222
+    },
+    "historical_compounds": {
+      "basename": "historical_compounds.tsv.gz",
+      "sha256": "f1f82793b5c652007a042699c19cd5640a8b68e8b1f0d4f94e4dc4f54045060c"
+    },
+    "query_compounds": {
+      "basename": "query_compounds.tsv.gz",
+      "sha256": "f51670fffd21d2e9109b4376dd53aab55bbacb09d2e4795dfa515fcaca98b113"
+    },
+    "candidate_targets": {
+      "basename": "candidate_targets.tsv.gz",
+      "sha256": "0ee86746b306fb388a1f74a6b88ce4d1eba01b7a4eb473315f6b3def57145cdc",
+      "expected_targets": 4123
+    },
+    "candidate_sequences": {
+      "basename": "candidate_sequences.fasta",
+      "sha256": "a83421dba2482f236fe18340dd592cc7d5ed22c98c4fc39435c40f04f289b442"
+    },
+    "primary_complete_ranks": {
+      "basename": "corrective_prediction_ranks.tsv.gz",
+      "sha256": "87739aa818744c7084088d13c386444aa41bbef38c257083325298003181479e",
+      "expected_rows": 3658128,
+      "use": "rowwise exact reproduction check for weight 0.7 only"
+    },
+    "endpoint": {
+      "basename": "evaluation_pairs.tsv.gz",
+      "sha256": "09296b066a23197a7c178f00514f2b3d9ed7e6f3c459ea92a55e01a6010d1132",
+      "expected_relations": 358,
+      "expected_queries": 222,
+      "expected_targets": 156
+    },
+    "scaffold_mask": {
+      "basename": "scaffold_audit.tsv.gz",
+      "sha256": "fa0029ef5b7822ad5ca93f7bd93ac808f85f1e0c02e827fa91be375031b2d7af"
+    },
+    "homology_0_30_mask": {
+      "basename": "homology_0_30.tsv.gz",
+      "sha256": "3a8247ed8f683fe6fce5fb345f56e3ec73a872b065eca922e92e494f084a1793"
+    },
+    "homology_0_50_mask": {
+      "basename": "homology_0_50.tsv.gz",
+      "sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b"
+    },
+    "homology_0_70_mask": {
+      "basename": "homology_0_70.tsv.gz",
+      "sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b"
+    },
+    "ranking_implementation": {
+      "basename": "pu_retrieval_metrics.py",
+      "sha256": "7e40e80c3203a4a6cf95ca675cc9c333168f8feb234449856f26b5e132ec3165"
+    }
+  },
+  "fixed_scoring_policy": {
+    "baselines": [
+      "weighted_target_popularity",
+      "sequence_3mer_transfer",
+      "weighted_morgan_transfer",
+      "structure_sequence_pair_neighbor"
+    ],
+    "morgan_radius": 2,
+    "morgan_bits": 2048,
+    "sequence_representation": "character_3mer_tfidf_cosine",
+    "pair_neighbor_sequence_top_k": 100,
+    "same_query_historical_target_mask": true,
+    "tie_salt": "npass_strict_ab_doublecold_successor_v1_20260719",
+    "endpoint_informed_scoring": false
+  },
+  "reuse_contract": {
+    "single_process_run": true,
+    "chemical_similarities_computed_once_per_query_and_reused_across_all_weights": true,
+    "sequence_matrix_and_pair_neighbor_top100_computed_once_and_reused_across_all_weights": true,
+    "query_specific_sequence_similarities_computed_once_and_reused_across_all_weights": true
+  },
+  "display_scopes": [
+    "temporal_strict_ab",
+    "scaffold_cold_strict_ab",
+    "project_defined_joint_scaffold_homology_cold_0_30",
+    "project_defined_joint_scaffold_homology_cold_0_50_0_70_identical_mask"
+  ],
+  "metrics": [
+    "Recall@10",
+    "Recall@50",
+    "NDCG@10",
+    "NDCG@50",
+    "MRR"
+  ],
+  "primary_comparisons": {
+    "reference_variant": "A1_B0_7_primary",
+    "complete_score_rank_change": [
+      "eligible candidate score-changed count",
+      "eligible candidate rank-changed count and fraction",
+      "mean and maximum absolute rank change",
+      "query count with any rank change",
+      "top-50 symmetric-difference membership count",
+      "query count with any top-50 membership change",
+      "endpoint-relation rank and top-50 membership changes"
+    ],
+    "scope_change": "must be exactly zero because endpoint and masks are fixed",
+    "metric_change": "macro query metric minus the corresponding 0.7 reference cell"
+  },
+  "complete_rank_release_boundary": {
+    "complete_candidate_scores_and_ranks_must_be_computed": true,
+    "complete_candidate_scores_and_ranks_written": false,
+    "reason": "Identifier-bearing ledgers remain restricted; aggregate change counts and exact primary reproduction receipts are sufficient for this revision output.",
+    "expected_computed_score_rank_rows": 10974384,
+    "primary_0_7_rowwise_score_and_rank_reproduction_required": true
+  },
+  "uncertainty": "No new bootstrap or p-value is added; this is a bounded descriptive policy perturbation. Tie-aware uncertainty is reported by the separate frozen Analysis A.",
+  "output_contract": {
+    "aggregate_only": true,
+    "identifier_bearing_rows": false,
+    "absolute_paths": false,
+    "weight_variant_rows": 3,
+    "aggregate_metric_rows": 48,
+    "metric_delta_rows": 240,
+    "complete_rank_change_rows": 12,
+    "scope_cardinality_rows": 12,
+    "required_files": [
+      "weight_variants.tsv",
+      "aggregate_metrics.tsv",
+      "metric_deltas_vs_0_7.tsv",
+      "complete_rank_top50_changes_vs_0_7.tsv",
+      "scope_cardinality_invariance.tsv",
+      "weight_policy_summary.json",
+      "execution_receipt.json",
+      "run_manifest.json"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "environment": {
+    "explicit_path": "environment/conda-win-64-explicit.txt",
+    "explicit_sha256": "d98b20794b6ee0a7273412cb5986622c1285637cd59b989fcab3bdda9efc3bb5",
+    "receipt_path": "environment/environment-lock.json",
+    "receipt_sha256": "d96f1c45c72634ef289101074a791d731bf01d94817dc5979df64c51870ede24",
+    "versions": {
+      "numpy": "2.4.6",
+      "python": "3.11.15",
+      "rdkit": "2026.03.4",
+      "scikit_learn": "1.9.0"
+    }
+  },
+  "legacy_artifacts_mutated": false,
+  "lock_state": "LOCKED_BEFORE_EXECUTION",
+  "locked_at_utc": "2026-07-28T08:01:17.695960+00:00",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "protocol_lock": {
+    "path": "manifests/protocol_lock_manifest_v1.json",
+    "sha256": "96befee13ae1d41ad433c8697fac92ccd30fb25e24c3cf1279c6b4b7e040abd9"
+  },
+  "public_release_authorized": false,
+  "result_artifacts_generated_before_lock": false,
+  "schema_version": "1.0",
+  "source_sha256": {
+    "audit_suite_v1_20260728/scripts/audit_common.py": "f1a079aebccdc5ee794755b4694164f8b90b04158ec7f6afc045f5f6bbe35af5",
+    "audit_suite_v1_20260728/scripts/audit_rank_score_structure.py": "afde3866a203746609f378df8b2a79d06495ad81e1dd8b0cb84dcfedb79f69fb",
+    "audit_suite_v1_20260728/scripts/audit_source_concentration.py": "fd2d336ded2356d0b8842f61988fd5fed01fb1cbac280eca399366761a90b0af",
+    "audit_suite_v1_20260728/scripts/audit_top100_exhaustive_fidelity.py": "87b7a2583b976f4b6f6839b66441efa8df904dfaf359e205d9a2b175eb5cb29d",
+    "audit_suite_v1_20260728/scripts/audit_unresolved_reasons.py": "a073fe558354ef4ae683952552434d559f581c5f4e9c60559a3a22d9b567c15e",
+    "audit_suite_v1_20260728/scripts/check_audit_suite.py": "7ea5952b17802cf3fd733ba3546d29f54a1bb0efa6578f45fdbeb80b66e67794",
+    "audit_suite_v1_20260728/scripts/run_with_runtime_receipt.py": "ca436d5123440a22cd696d694acc823b2ebcaf9ee2a094ba53aebbcaf7cddb88",
+    "audit_suite_v1_20260728/tests/test_audit_logic.py": "86883ec6ab2c53d93623bc495669467fb67c3247fe5b97fd7e237175d6976f3b",
+    "scripts/asof_common.py": "cacdc208b026963317d3c1285f99710046e09909a89332bbeae2bc1663ae0964",
+    "scripts/asof_successor_common.py": "983995a14a1f249b182984808b07329e0d9f61698c8e4bf5d473eec51e44930a",
+    "scripts/build_asof_corrective_bundle.py": "f3a238ea4e55f31d2944c8d532f5c4194e19352c0a9cabadc6c6c790963e2953",
+    "scripts/evaluate_asof_cutoff_successor.py": "a8462efcc70c4a4b6e913829acc9e3d37e5fc298374dbe60526821df2e02dce8",
+    "scripts/lock_implementation.py": "74529519477f35dca71f993feeaa2861ca05bdda0ba2caadc3c216a2bae59099",
+    "scripts/run_author_run_asof_cutoff_successor.py": "694ab7b105b408fda35e9e5d6eb5b704948117602b8519631f92ead9341bdc2f",
+    "scripts/score_asof_cutoff_successor.py": "7b8263828ab6eaf4756307f315df4502b1615a40bffa8219284612585ad9bdc8",
+    "scripts/test_asof_successor_core.py": "1bccb01e9553bfdde6ad3db034a652999ecc0192c4ec03471fc49090b448b7ae",
+    "workspace/scripts/pu_retrieval_metrics.py": "7e40e80c3203a4a6cf95ca675cc9c333168f8feb234449856f26b5e132ec3165"
+  }
+}
+

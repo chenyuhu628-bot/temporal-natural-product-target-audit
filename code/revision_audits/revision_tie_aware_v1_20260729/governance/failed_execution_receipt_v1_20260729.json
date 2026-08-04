@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "attempt": 1,
+  "status": "FAILED_CLOSED_BEFORE_OUTPUT_DIRECTORY_CREATION",
+  "failure_observed_at_utc": "2026-07-29T09:01:24.9060737Z",
+  "implementation_lock": {
+    "basename": "tie_aware_implementation_lock_v1.json",
+    "sha256": "f3e3edde1150a0ee35408c1deea97f3bf12f273afdd7715cc552edb2507898f9"
+  },
+  "failure_class": "empty_prespecified_query_subset_not_supported",
+  "failure_detail": "The scaffold-cold strict A/B scope contained zero sequence-3mer score-operational queries. The v1 implementation incorrectly required every scope/subset cell to be nonempty.",
+  "scientific_interpretation": "An empty operational subset is a reportable not-estimable cell, not a reason to remove the prespecified subset or alter any score, endpoint, scope, metric, tie rule, or seed.",
+  "remediation_scope": "Permit a prespecified empty subset, retain its planned table cells with query_count=0, blank metric values, and status not_estimable_no_queries. No formula or nonempty-cell calculation changes.",
+  "new_result_information_seen_before_amendment": [
+    "The scaffold-cold sequence-3mer score-operational subset has zero queries."
+  ],
+  "tie_aware_aggregate_metric_values_seen_before_amendment": false,
+  "output_directory_created": false,
+  "result_file_written": false,
+  "logs": [
+    {
+      "basename": "analysis.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "basename": "analysis.stderr.log",
+      "sha256": "9230148b074504cebee405157bd752a20614e43aa347d37f9f6b132cd1a30796"
+    }
+  ]
+}

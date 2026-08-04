@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Deterministically restore recorded gzip header timestamps required by the byte-level source locks; compressed payloads are unchanged.",
+  "files": [
+    {
+      "path": "data/processed/npass_v2_evidence_records_v1_1_uniprot_mapped.tsv.gz",
+      "mtime": 1784104295,
+      "header_filename": "npass_v2_evidence_records_v1_1_uniprot_mapped.tsv",
+      "decompressed_sha256": "7cb2a29d1d94c432c5ec30a21e401a08dfa7cfbc98e1e55a38edd1335b93b50f",
+      "expected_gzip_sha256": "69802f62470930405d2658cc37e99f668aeb7db7795696ff78c76563d552d582"
+    },
+    {
+      "path": "data/processed/npass_v3_evidence_records_v1_1_uniprot_mapped.tsv.gz",
+      "mtime": 1784104301,
+      "header_filename": "npass_v3_evidence_records_v1_1_uniprot_mapped.tsv",
+      "decompressed_sha256": "2eab12c5562858d790718dbfb7ab1a5d69cc7cc6ffddfa383b42af9992b852b8",
+      "expected_gzip_sha256": "cc80a1cfe11c4bfd007cf0a9b110026429bffc99b23abff500d2cfddeb7fadbe"
+    },
+    {
+      "path": "data/interim/pubmed_v2_pmid_metadata.csv.gz",
+      "mtime": 1784107817,
+      "header_filename": "pubmed_v2_pmid_metadata.csv.gz.tmp",
+      "decompressed_sha256": "541a7766ac18eabcd9ef92800adb78fb7b79d5afea4511f65a7caa62463ba74c",
+      "expected_gzip_sha256": "f94a892fd9ce106a62e6306b16a0a2f0b5482987c1610d33e6cba21e090029b0"
+    }
+  ]
+}

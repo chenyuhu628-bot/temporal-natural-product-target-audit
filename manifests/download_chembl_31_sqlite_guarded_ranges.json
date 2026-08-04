@@ -1,0 +1,18 @@
+[
+  {
+    "source_dataset": "ChEMBL",
+    "version": "31",
+    "database_last_update": null,
+    "release_date": "2022-08-15",
+    "publication_online_date": null,
+    "file": "chembl_31_sqlite.tar.gz",
+    "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/chembl_31_sqlite.tar.gz",
+    "purpose": "historical ChEMBL 31 SQLite database for candidate-pair activity and assay extraction",
+    "downloaded_at": "2026-07-15T11:15:08.280342+00:00",
+    "bytes": 4505413744,
+    "sha256": "cbd28e4b0e955e562d975d972d262298286d36e3992292f783dce8f498b04e26",
+    "expected_sha256": "cbd28e4b0e955e562d975d972d262298286d36e3992292f783dce8f498b04e26",
+    "event": "downloaded"
+  }
+]
+

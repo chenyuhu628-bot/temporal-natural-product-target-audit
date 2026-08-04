@@ -1,0 +1,59 @@
+[
+  {
+    "source_dataset": "NPASS",
+    "version": "2.0",
+    "database_last_update": "2022-10-04",
+    "release_date": null,
+    "publication_online_date": "2022-11-29",
+    "file": "NPASSv2.0_download_naturalProducts_generalInfo.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASSv2.0_download_naturalProducts_generalInfo.txt",
+    "purpose": "compound identifiers and names",
+    "downloaded_at": "2026-07-15T07:23:30.065503+00:00",
+    "bytes": 9379911,
+    "sha256": "4ec8f066abf7cebe8b172e1b16a6248f3b6a94efb00ed587f0a9489f5ca688bf",
+    "event": "already_verified"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "2.0",
+    "database_last_update": "2022-10-04",
+    "release_date": null,
+    "publication_online_date": "2022-11-29",
+    "file": "NPASSv2.0_download_naturalProducts_structureInfo.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASSv2.0_download_naturalProducts_structureInfo.txt",
+    "purpose": "SMILES, InChI, and InChIKey",
+    "downloaded_at": "2026-07-15T07:23:30.120782+00:00",
+    "bytes": 29748831,
+    "sha256": "cbe688e9b6fdd0960c78d1a93d7f487ca4a2bbad3017275515c3d90d2a0f72fa",
+    "event": "already_verified"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "2.0",
+    "database_last_update": "2022-10-04",
+    "release_date": null,
+    "publication_online_date": "2022-11-29",
+    "file": "NPASSv2.0_download_naturalProducts_activities.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASSv2.0_download_naturalProducts_activities.txt",
+    "purpose": "activity records, targets, values, and references",
+    "downloaded_at": "2026-07-15T07:25:54.997718+00:00",
+    "bytes": 90364982,
+    "sha256": "ced9ee333e7e5e12eb07d21d52ec20af777b6c429a6438ed9b402ca8fd547507",
+    "event": "downloaded"
+  },
+  {
+    "source_dataset": "NPASS",
+    "version": "2.0",
+    "database_last_update": "2022-10-04",
+    "release_date": null,
+    "publication_online_date": "2022-11-29",
+    "file": "NPASSv2.0_download_naturalProducts_targetInfo.txt",
+    "url": "https://bidd.group/NPASS/downloadFiles/NPASSv2.0_download_naturalProducts_targetInfo.txt",
+    "purpose": "target identifiers and external cross-references",
+    "downloaded_at": "2026-07-15T07:25:58.075727+00:00",
+    "bytes": 629317,
+    "sha256": "d171c261e839a95ff6fdadeba6d1eeacf1536a70eae7668d6a179f85d44d83dc",
+    "event": "downloaded"
+  }
+]
+

@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "lock_state": "LOCKED_BEFORE_TIE_AWARE_RESULT_COMPUTATION",
+  "locked_at_utc": "2026-07-29T08:40:39.2656568Z",
+  "analysis_role": "reviewer_requested_post_hoc_sensitivity",
+  "claim_boundary": "Author-run, outcome-visible, non-independent retrospective methodological audit. The analysis does not create external validation, restore blindness, or establish biological discovery.",
+  "prelock_disclosure": {
+    "legacy_salted_endpoint_results_seen": true,
+    "score_degeneracy_aggregate_seen": true,
+    "reviewer_requested_methods_seen": true,
+    "tie_aware_expected_metrics_or_bounds_computed_before_lock": false,
+    "real_input_component_resampling_executed_before_lock": false
+  },
+  "scientific_inputs": {
+    "corrective_complete_ranks": {
+      "basename": "corrective_prediction_ranks.tsv.gz",
+      "sha256": "87739aa818744c7084088d13c386444aa41bbef38c257083325298003181479e",
+      "expected_rows": 3658128
+    },
+    "strict_ab_endpoint": {
+      "basename": "evaluation_pairs.tsv.gz",
+      "sha256": "09296b066a23197a7c178f00514f2b3d9ed7e6f3c459ea92a55e01a6010d1132",
+      "expected_relations": 358,
+      "expected_queries": 222,
+      "expected_targets": 156
+    },
+    "scaffold_scope_mask": {
+      "basename": "scaffold_audit.tsv.gz",
+      "sha256": "fa0029ef5b7822ad5ca93f7bd93ac808f85f1e0c02e827fa91be375031b2d7af"
+    },
+    "homology_0_30_scope_mask": {
+      "basename": "homology_0_30.tsv.gz",
+      "sha256": "3a8247ed8f683fe6fce5fb345f56e3ec73a872b065eca922e92e494f084a1793"
+    },
+    "homology_0_50_scope_mask": {
+      "basename": "homology_0_50.tsv.gz",
+      "sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b"
+    },
+    "homology_0_70_scope_mask": {
+      "basename": "homology_0_70.tsv.gz",
+      "sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b"
+    },
+    "future_source_evidence": {
+      "basename": "future_active_source_strict_primary_evidence.tsv.gz",
+      "sha256": "e800a181976de63a7ee027ed929576ae16fd925b0f458bff414d41075cefa21f",
+      "authorized_use": "local_read_only_component_construction",
+      "identifier_release_authorized": false
+    }
+  },
+  "frozen_scopes": [
+    "temporal_strict_ab",
+    "scaffold_cold_strict_ab",
+    "double_cold_0_30",
+    "double_cold_0_50",
+    "double_cold_0_70"
+  ],
+  "frozen_baselines": [
+    "weighted_target_popularity",
+    "sequence_3mer_transfer",
+    "weighted_morgan_transfer",
+    "structure_sequence_pair_neighbor"
+  ],
+  "cutoffs": [
+    10,
+    50
+  ],
+  "relevance": "Binary later-recorded strict A/B endpoint relation within each frozen scope.",
+  "tie_definition": "Exact equality of the serialized finite floating-point score after round-trip parsing; legacy salted ranks are never used to define a tie block.",
+  "tie_model": {
+    "within_block_distribution": "uniform_over_all_permutations",
+    "recall_expected": "For a tie block of m items containing r relevant items and contributing s top-k positions, expected relevant count is r*s/m.",
+    "recall_lower": "For that block, max(0, r-(m-s)) relevant items enter top-k.",
+    "recall_upper": "For that block, min(r,s) relevant items enter top-k.",
+    "ndcg_expected": "Each evaluated position in a tie block has relevance probability r/m; expected DCG uses the standard binary discount 1/log2(rank+1).",
+    "ndcg_lower": "Place the forced relevant items at the least-discounted evaluated positions of every tie block.",
+    "ndcg_upper": "Place as many relevant items as possible at the most-discounted evaluated positions of every tie block.",
+    "normalizer": "IDCG@k for the observed number of relevant targets for that query and scope.",
+    "query_any_hit_probability": "Exact hypergeometric probability of at least one relevant top-k member under the uniform boundary-tie allocation.",
+    "score_identifiable_rule": "A query metric is score-identifiable only when its attainable lower and upper bounds are equal within absolute tolerance 1e-15; otherwise it is tie-dependent.",
+    "multi_salt_repetition": "not_run; theoretical uniform-tie expectation and exact attainable bounds are primary"
+  },
+  "query_subsets": {
+    "all_queries": "All evaluable queries in the scope.",
+    "score_operational": "For sequence_3mer_transfer only, at least one eligible candidate has score strictly greater than zero.",
+    "structural_all_zero": "For sequence_3mer_transfer only, every eligible candidate has score exactly zero; reported as non-operational tie allocation, not algorithmic ranking performance."
+  },
+  "uncertainty": {
+    "replicates": 10000,
+    "prng": "NumPy PCG64",
+    "query_bootstrap_base_seed": 2026072901,
+    "pmid_component_bootstrap_base_seed": 2026072902,
+    "cell_seed_derivation": "unsigned first eight bytes of SHA-256(base_seed|scope|baseline|query_subset)",
+    "interval": "95% percentile using NumPy linear interpolation",
+    "query_bootstrap_estimand": "Equally query-weighted macro mean of the within-tie expected query metric for a query drawn from the empirical scope/subset distribution; query units are resampled independently with replacement.",
+    "pmid_component_estimand": "The same equally query-weighted macro mean, with uncertainty perturbed by resampling scope/subset-specific connected components of the undirected query-PMID bipartite graph; sampled components contribute all member queries and the replicate is normalized by the sampled query count.",
+    "interpretation_difference": "The query bootstrap describes query-to-query sampling variability under an independence approximation. The PMID-component bootstrap is a source-document dependence sensitivity and neither creates a document-disjoint test set nor changes the point estimand.",
+    "component_count_lt_2": "not_estimable",
+    "n_equals_1_query_bootstrap": "descriptive_point_only"
+  },
+  "finite_sample_zero_hit_bound": {
+    "event": "A query has at least one later-recorded relevant target in the legacy fixed-salt top-50.",
+    "scopes": [
+      "double_cold_0_30",
+      "double_cold_0_50",
+      "double_cold_0_70"
+    ],
+    "method": "One-sided exact Clopper-Pearson 95% upper confidence bound for a binomial proportion.",
+    "alpha": 0.05,
+    "zero_success_formula": "1-alpha^(1/n)",
+    "assumption_boundary": "Descriptive finite-sample bound under exchangeable independent Bernoulli queries; source-document dependence is not absorbed by this bound and is reported separately."
+  },
+  "output_contract": {
+    "aggregate_only": true,
+    "identifier_bearing_output": false,
+    "component_membership_output": false,
+    "alternative_rank_ledger_output": false,
+    "tie_aware_metrics_rows": 60,
+    "three_mer_operability_rows": 5,
+    "double_cold_zero_hit_rows": 12,
+    "uncertainty_estimand_rows": 4,
+    "required_output_files": [
+      "tie_aware_metrics.tsv",
+      "three_mer_operability.tsv",
+      "double_cold_query_hit_upper_bounds.tsv",
+      "uncertainty_estimands.tsv",
+      "tie_aware_summary.json",
+      "execution_receipt.json",
+      "run_manifest.json"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "chain_id": "npass_corrective_authoritative_execution_chain_v3_20260728",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "calculation_boundary": "author_run_non_independent_corrective_successor",
+  "authoritative_steps": [
+    {
+      "step_id": "build_corrected_inputs",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/scripts/build_asof_corrective_bundle_v1_1.py",
+      "package_path": "code/corrective/build_asof_corrective_bundle_v1_1.py",
+      "sha256": "6938a1bcdc3b9cc2847e4bfdb8783fe03c7673385f9ed2d7044635752753ba23"
+    },
+    {
+      "step_id": "score_fixed_retrieval",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/scripts/score_asof_cutoff_successor.py",
+      "package_path": "code/corrective/score_asof_cutoff_successor.py",
+      "sha256": "7b8263828ab6eaf4756307f315df4502b1615a40bffa8219284612585ad9bdc8"
+    },
+    {
+      "step_id": "evaluate_fixed_endpoint",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/scripts/evaluate_asof_cutoff_successor.py",
+      "package_path": "code/corrective/evaluate_asof_cutoff_successor.py",
+      "sha256": "a8462efcc70c4a4b6e913829acc9e3d37e5fc298374dbe60526821df2e02dce8"
+    },
+    {
+      "step_id": "audit_before_after",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/scripts/audit_corrective_before_after_v1.py",
+      "package_path": "code/corrective/audit_corrective_before_after_v1.py",
+      "sha256": "3fd8b365e6910627785f50a4c0b333001c2b00dee796d3e9e598dc3370b0ee3a"
+    },
+    {
+      "step_id": "audit_rank_ties",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_rank_score_structure.py",
+      "package_path": "code/audits/audit_rank_score_structure.py",
+      "sha256": "afde3866a203746609f378df8b2a79d06495ad81e1dd8b0cb84dcfedb79f69fb"
+    },
+    {
+      "step_id": "audit_source_concentration",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_source_concentration.py",
+      "package_path": "code/audits/audit_source_concentration.py",
+      "sha256": "fd2d336ded2356d0b8842f61988fd5fed01fb1cbac280eca399366761a90b0af"
+    },
+    {
+      "step_id": "audit_top100_exhaustive",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_top100_exhaustive_fidelity.py",
+      "package_path": "code/audits/audit_top100_exhaustive_fidelity.py",
+      "sha256": "87b7a2583b976f4b6f6839b66441efa8df904dfaf359e205d9a2b175eb5cb29d"
+    },
+    {
+      "step_id": "audit_unresolved_entities",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_unresolved_reasons.py",
+      "package_path": "code/audits/audit_unresolved_reasons.py",
+      "sha256": "a073fe558354ef4ae683952552434d559f581c5f4e9c60559a3a22d9b567c15e"
+    },
+    {
+      "step_id": "audit_document_components",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_document_component_bootstrap_v1_4.py",
+      "package_path": "code/audits/audit_document_component_bootstrap_v1_4.py",
+      "sha256": "4242962c338bdb8f41ed46c4961f56e3d269e8dd85c76219a8d8cf1ce771b6e4"
+    },
+    {
+      "step_id": "audit_endpoint_score_attribution_posthoc",
+      "source_project_path": "strict_ab_asof_cutoff_successor_v1_20260728/audit_suite_v1_20260728/scripts/audit_endpoint_score_attribution_posthoc_v1.py",
+      "package_path": "code/audits/audit_endpoint_score_attribution_posthoc_v1.py",
+      "sha256": "ef38288c6702d370c3cbe10ad1fda32c4cd04f598064f9d369b24b59bcc0de28"
+    },
+    {
+      "step_id": "export_final_tables",
+      "source_project_path": "manuscript_molecular_diversity_v3_20260728/scripts/export_corrective_tables_v3.py",
+      "package_path": "code/manuscript_exports/export_corrective_tables_v3.py",
+      "sha256": "9f7d2bac55e1c6ccdfd8236f9482ab32fc4d6a25618e887c6f53cb70574197a3"
+    },
+    {
+      "step_id": "generate_final_figures",
+      "source_project_path": "manuscript_molecular_diversity_v3_20260728/scripts/generate_corrective_figures_v3.py",
+      "package_path": "code/manuscript_exports/generate_corrective_figures_v3.py",
+      "sha256": "fbab1d3f018231240b7bb0dcc31baf46077b92cc7727e0599607a1d0fca42838"
+    }
+  ],
+  "non_authoritative_custody_only": [
+    "code/corrective/build_asof_corrective_bundle.py",
+    "code/audits/audit_document_component_bootstrap_v1.py"
+  ],
+  "interpretation": "Only authoritative_steps define the current execution chain. Custody-only predecessors are retained for audit history and must not be selected for reruns."
+}
+

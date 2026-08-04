@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-08-04",
+  "status": "AUTHOR_SIDE_CLEAN_REPRODUCTION_COMPLETED_16_OF_16_SHA256",
+  "claim_boundary": "Public code and schemas only; no third-party or row-level input is included.",
+  "cutoff": "2022-08-31",
+  "evidence_policy": "configs/evidence_policy_v1_1.json",
+  "authoritative_analysis_chain": "manifests/CURRENT_EXECUTION_CHAIN.json",
+  "stages": [
+    {"id": "00", "script": "scripts/download_sources.py", "purpose": "download direct official files and verify recorded bytes/SHA-256"},
+    {"id": "01", "script": "reproduction/source_to_frozen/audit_npass_core.py", "purpose": "source-faithful human single-protein NPASS alignment"},
+    {"id": "02", "script": "reproduction/source_to_frozen/fetch_pubmed_v3_only_dates.py", "purpose": "archive and classify v3-only PubMed dates"},
+    {"id": "03", "script": "reproduction/source_to_frozen/build_evidence_tiers.py", "purpose": "apply frozen evidence policy v1.1"},
+    {"id": "04", "script": "reproduction/source_to_frozen/map_uniprot_target_sequences.py", "purpose": "strict reviewed-human mapping and sequence archive"},
+    {"id": "05", "script": "reproduction/source_to_frozen/fetch_pubmed_v2_pmid_dates.py", "purpose": "archive dates for the strict v2 PMID set"},
+    {"id": "06", "script": "reproduction/source_to_frozen/build_strict_temporal_pair_tables.py", "purpose": "freeze strict historical and later-recorded pair candidates"},
+    {"id": "07", "script": "reproduction/source_to_frozen/audit_chembl_entity_mapping.py", "purpose": "exact compound/target mapping to ChEMBL 31"},
+    {"id": "08", "script": "reproduction/source_to_frozen/audit_chembl31_historical_activities.py", "purpose": "read-only historical leakage audit"},
+    {"id": "09", "script": "reproduction/source_to_frozen/build_chembl31_future_leakage_gate.py", "purpose": "retain the exact C31-primary later-recorded endpoint"},
+    {"id": "10", "script": "reproduction/source_to_frozen/extract_chembl31_human_target_catalogue.py", "purpose": "extract the 4123-target historical candidate universe"},
+    {"id": "11", "script": "reproduction/source_to_frozen/prepare_verified_temporal_cold_start_inputs.py", "purpose": "prepare frozen structures and union sequences"},
+    {"id": "12", "script": "reproduction/source_to_frozen/derive_bemis_murcko_scaffolds.py", "purpose": "derive RDKit Bemis-Murcko keys"},
+    {"id": "13", "script": "reproduction/source_to_frozen/repair_invalid_scaffold_structures_from_npass_inchi.py", "purpose": "apply exact-key validated InChI scaffold-only repair"},
+    {"id": "14", "script": "reproduction/source_to_frozen/audit_temporal_scaffold_coldness.py", "purpose": "audit future scaffold coldness with unresolved history fail-closed"},
+    {"id": "15", "script": "reproduction/source_to_frozen/cluster_mmseqs2_target_coldness.py", "purpose": "audit target coldness at 0.30/0.50/0.70 identity"},
+    {"id": "16", "script": "reproduction/source_to_frozen/combine_temporal_double_cold_audits.py", "purpose": "validate the temporal/scaffold/homology join"},
+    {"id": "17", "script": "reproduction/source_to_frozen/build_author_run_successor_bundle.py", "purpose": "write the 10 minimal frozen scoring/evaluation inputs"},
+    {"id": "18", "script": "code/corrective/build_asof_corrective_bundle_v1_1.py", "purpose": "authoritative date-precision corrective input build"}
+  ],
+  "determinism": {
+    "gzip_mtime": 0,
+    "gzip_filename": "",
+    "row_order": "producer-specific stable lexical/key ordering",
+    "randomness": "no random sampling in source-to-frozen stages",
+    "analysis_seeds": "locked in configs/asof_cutoff_rebuild_spec_v1.json"
+  },
+  "dynamic_services": {
+    "PubMed": "record sorted ID-list SHA-256, batch, UTC request time, retry and raw response receipt",
+    "UniProt": "record submitted accession-list SHA-256, job/request receipts, response headers, release and raw response hashes"
+  }
+}

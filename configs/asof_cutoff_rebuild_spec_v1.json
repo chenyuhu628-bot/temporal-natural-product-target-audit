@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "run_id": "npass_strict_ab_asof_cutoff_author_run_v1_20260728",
+  "created_local_date": "2026-07-28",
+  "protocol_state_at_lock": "LOCKED_BEFORE_CORRECTIVE_RESULT_GENERATION",
+  "execution_authorized": true,
+  "execution_mode": "author_run_non_independent_corrective_successor",
+  "claim_boundary": [
+    "not an independent outer test",
+    "not blinded external validation",
+    "not prospective biological discovery",
+    "not direct-binding or experimental validation",
+    "not authorization for public redistribution",
+    "unrecorded pairs remain unlabeled rather than negative"
+  ],
+  "temporal_rebuild": {
+    "cutoff": "2022-08-31",
+    "source_version_for_history": "NPASS_v2_only",
+    "eligible_row_status": "eligible_pre_cutoff",
+    "eligible_row_rule": {
+      "automatic_verification_level": "P1_npass_raw_exact_candidate",
+      "evidence_tiers": [
+        "A_affinity_candidate",
+        "B_quantitative_functional_candidate"
+      ],
+      "strict_entity_mapping": "strict_one_to_one_reviewed_human",
+      "sequence_found": true,
+      "reference_type": "PMID",
+      "pmid_must_be_numeric": true,
+      "pubmed_record_must_be_found": true,
+      "date_precision": "day",
+      "publication_date_lte": "2022-08-31"
+    },
+    "exclusive_row_statuses": [
+      "eligible_pre_cutoff",
+      "excluded_not_numeric_pmid",
+      "excluded_pubmed_not_found",
+      "excluded_non_day_precision",
+      "excluded_after_cutoff"
+    ],
+    "historical_pair_membership": "retain exactly the frozen 4,990 keys; every retained pair must have at least one eligible_pre_cutoff v2 row",
+    "historical_feature_contribution": "only eligible_pre_cutoff v2 rows may contribute tier, weight, representative structure, fingerprint, or scaffold",
+    "duplicate_pair_rule": "best eligible tier only; A preferred to B; never sum source rows",
+    "tier_weights": {
+      "A_affinity_candidate": 1.0,
+      "B_quantitative_functional_candidate": 0.7
+    },
+    "unresolved_date_policy": "exclude the row from every historical feature contribution; do not guess or impute",
+    "after_cutoff_policy": "exclude the row from every historical feature contribution",
+    "v3_history_policy": "no v3 row may contribute to any historical feature"
+  },
+  "chemical_role_separation": {
+    "historical_structure_source": "mode of nonempty SMILES among eligible_pre_cutoff v2 rows with lexical tie break",
+    "query_structure_source": "frozen successor query representation derived from eligible v3 endpoint-side rows",
+    "shared_inchikey_policy": "historical and query role maps remain separate even for the same full InChIKey",
+    "historical_inchi_repair": {
+      "allowed": true,
+      "source_version": "v2_only",
+      "source_np_id_must_belong_to_eligible_row": true,
+      "full_inchikey_roundtrip_required": true,
+      "unique_consistent_structure_required": true,
+      "failure_action": "fail_closed"
+    }
+  },
+  "frozen_endpoint": {
+    "source": "author_run_strict_ab_doublecold_bundle_v2_20260720/evaluation_inputs/evaluation_pairs.tsv.gz",
+    "sha256": "09296b066a23197a7c178f00514f2b3d9ed7e6f3c459ea92a55e01a6010d1132",
+    "relations": 358,
+    "queries": 222,
+    "targets": 156,
+    "tier_policy": "retain existing strict-v3-only tier; audited difference is 0 of 358",
+    "redesign_allowed": false
+  },
+  "frozen_candidate_universe": {
+    "catalogue": "C31 human SINGLE PROTEIN accession catalogue",
+    "target_count": 4123,
+    "target_tsv_sha256": "9d50f497b5304028585b12506f52a5377301db8c6eb14d9da16ac8c24e3cdc3a",
+    "sequence_fasta_sha256": "e8c3f0b17a3231853b1e86d4a63c232a716692f62d38c238ce0eb90fffb676bc",
+    "activity_role": "leakage gate only; never a label source"
+  },
+  "frozen_inputs": {
+    "npass_v2_evidence_sha256": "69802f62470930405d2658cc37e99f668aeb7db7795696ff78c76563d552d582",
+    "npass_v3_evidence_sha256": "cc80a1cfe11c4bfd007cf0a9b110026429bffc99b23abff500d2cfddeb7fadbe",
+    "v2_pubmed_metadata_sha256": "f94a892fd9ce106a62e6306b16a0a2f0b5482987c1610d33e6cba21e090029b0",
+    "scaffold_endpoint_audit_sha256": "fa0029ef5b7822ad5ca93f7bd93ac808f85f1e0c02e827fa91be375031b2d7af",
+    "homology_0_30_sha256": "3a8247ed8f683fe6fce5fb345f56e3ec73a872b065eca922e92e494f084a1793",
+    "homology_0_50_sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b",
+    "homology_0_70_sha256": "ec3bbd435f73bc1c724efdfd94ac10c32d6f9a55bd6c9a9349233a01e5dc7f5b"
+  },
+  "frozen_scoring": {
+    "baselines": [
+      "weighted_target_popularity",
+      "sequence_3mer_transfer",
+      "weighted_morgan_transfer",
+      "structure_sequence_pair_neighbor"
+    ],
+    "morgan": {
+      "radius": 2,
+      "bits": 2048
+    },
+    "pair_neighbor_sequence_top_k": 100,
+    "tie_salt": "npass_strict_ab_doublecold_successor_v1_20260719",
+    "mask_historical_targets_for_same_query": true,
+    "common_candidate_universe": true,
+    "new_model_or_tuning_allowed": false
+  },
+  "frozen_evaluation": {
+    "scopes": [
+      "temporal_strict_ab",
+      "scaffold_cold_strict_ab",
+      "double_cold_0_30",
+      "double_cold_0_50",
+      "double_cold_0_70"
+    ],
+    "metrics": [
+      "Recall@10",
+      "Recall@50",
+      "NDCG@10",
+      "NDCG@50",
+      "MRR"
+    ],
+    "primary_metric": "Recall@50",
+    "aggregation": "query_compound_macro_average",
+    "bootstrap_replicates": 10000,
+    "bootstrap_prng": "PCG64",
+    "bootstrap_seed": 20260719,
+    "interval": "95_percentile",
+    "negative_labels_allowed": false
+  },
+  "prespecified_audits": {
+    "before_after_full_diff": true,
+    "score_degeneracy_and_ties": true,
+    "pmid_source_concentration": true,
+    "entity_unresolved_aggregate_decomposition": true,
+    "pair_neighbor_top100_vs_exhaustive": {
+      "required": true,
+      "status": "post_hoc_sensitivity_only",
+      "may_replace_primary": false
+    },
+    "all_records_temporally_closed_sensitivity": {
+      "required": false,
+      "status": "optional_conservative_sensitivity_only",
+      "may_replace_primary": false
+    }
+  },
+  "release_policy": "restricted internal by default; aggregate/code release requires the separate field-level release gate"
+}
+
+

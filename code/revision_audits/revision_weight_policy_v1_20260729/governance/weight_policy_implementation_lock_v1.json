@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_weight_policy_v1_20260729",
+  "lock_state": "LOCKED_BEFORE_REAL_INPUT_EXECUTION",
+  "locked_at_utc": "2026-07-29T09:26:28.2485366Z",
+  "parent_protocol_sha256": "bd4902476160cc7c5cbacaf0cfd0f1a28c5300bde22232b3a2cc6c1f3c143dc2",
+  "plan_sha256": "52518a19cfa36791b24ab4ce169a6d18458207941801465d4b7a7119f7b646e0",
+  "implementation_files": {
+    "PROTOCOL.md": "16b3163be8132e79dbedafd6a3e83a8ba3eed5f7b399a6066424b9dc187f6050",
+    "governance/preexecution_synthetic_test_receipt_v1.json": "8fcd375e57c600e2c69ca6c60060f537872555ab2f3cc8b59586595f7bb2f451",
+    "scripts/run_weight_policy_sensitivity_v1.py": "30125a15e04105700df8f6bfec39d179b5213f73f5ce55be21e6a8369bd5865d",
+    "scripts/validate_weight_policy_outputs_v1.py": "23b52f0e6cd5794d7ab6c65cb29c0d91eeea4dc43a58cca868dd8259c12d253f",
+    "tests/test_weight_policy_sensitivity_v1.py": "87bfa58f3248ad171d3c570b279eac640c2165542136b7291fcbb8cac8a61dfd"
+  },
+  "external_code_lock": {
+    "basename": "pu_retrieval_metrics.py",
+    "sha256": "7e40e80c3203a4a6cf95ca675cc9c333168f8feb234449856f26b5e132ec3165"
+  },
+  "synthetic_test_receipt": {
+    "basename": "preexecution_synthetic_test_receipt_v1.json",
+    "sha256": "8fcd375e57c600e2c69ca6c60060f537872555ab2f3cc8b59586595f7bb2f451",
+    "status": "PASS",
+    "tests_passed": 7
+  },
+  "prelock_disclosure": {
+    "corrected_primary_results_visible": true,
+    "older_pre_correction_weight_results_visible": true,
+    "current_corrected_alternative_weight_results_computed": false,
+    "implementation_testing_used_synthetic_data_only": true
+  },
+  "scientific_contract": {
+    "tier_A_weight_fixed": 1.0,
+    "tier_B_weights": [
+      0.5,
+      0.7,
+      1.0
+    ],
+    "all_equal_alias_is_1_0_1_0": true,
+    "computed_complete_score_rank_rows": 10974384,
+    "primary_exact_reproduction_rows": 3658128,
+    "complete_rank_ledgers_written": false
+  },
+  "identifier_release_authorized": false,
+  "external_redistribution_authorized": false
+}

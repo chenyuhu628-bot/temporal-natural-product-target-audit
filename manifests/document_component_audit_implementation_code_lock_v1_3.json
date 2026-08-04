@@ -1,0 +1,26 @@
+{
+  "added_file_sha256": {
+    "audit_suite_v1_20260728/schemas/document_cluster_bootstrap_contract.md": "fa271ccd9349fc869c88bc663d7e423d548a734ca033f1a7453ac17f79fece3d",
+    "audit_suite_v1_20260728/scripts/audit_document_component_bootstrap_v1.py": "bfcfbaa8d6e3bde96ccf2611d017b499a920843c3d170d44a85ce228155367bb",
+    "audit_suite_v1_20260728/tests/test_document_component_bootstrap_v1.py": "ded22c5e5a98757127652d051cd3fb9baf26486155d1231e94a57e9447c1e468",
+    "governance/document_cluster_audit_amendment_20260728_05.md": "43f4b9c588e1c30c37552598a17e85a1bf3edec74adf7cb7a1aa96c266f77557",
+    "governance/document_cluster_audit_code_amendment_20260728_06.md": "81a3c8365bb7f8e25ad76107fca1860a5ec23052aa5dee33268607ef9e068936",
+    "scripts/lock_document_component_audit_implementation_v1_3.py": "884393ff8b9ebb0b7b1bb554427c726e8465bc174ac13cb2e03cda809a89456c"
+  },
+  "amendment_id": "document_cluster_audit_implementation_amendment_20260728_06",
+  "base_lock": {
+    "path": "manifests/audit_implementation_code_lock_v1_2.json",
+    "sha256": "5cca17a44abbec99e2f978c956a8a49eb4f104f9089d966adc9cf035e8921ad4"
+  },
+  "endpoint_score_rank_or_primary_metric_changed": false,
+  "identifier_release_authorized": false,
+  "lock_state": "LOCKED_BEFORE_DOCUMENT_COMPONENT_AUDIT_EXECUTION",
+  "locked_at_utc": "2026-07-28T08:46:48.109192+00:00",
+  "protocol_id": "npass_strict_ab_asof_cutoff_corrective_successor_v1_20260728",
+  "real_document_component_audit_executed_before_lock": false,
+  "schema_version": "1.3",
+  "scientific_protocol_changed": false,
+  "source_concentration_result_read_before_lock": false,
+  "synthetic_testing_only_before_lock": true
+}
+

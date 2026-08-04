@@ -1,0 +1,14 @@
+{
+  "checked_at_local_date": "2026-08-04",
+  "method_policy": "HEAD only, except a 1532-byte PubMed known-record GET because the endpoint returned 405 to HEAD",
+  "summary": {
+    "NPASS_static_urls": "8 of 8 returned HTTP 200 without an authentication challenge",
+    "ChEMBL_31_static_urls": "3 of 3 returned HTTP 200 without an authentication challenge",
+    "PubMed_ESummary": "HTTP 200 on a small known-record GET without an authentication challenge",
+    "UniProt_REST_help": "HTTP 200 without an authentication challenge",
+    "MMseqs2_release": "HTTP 200 after redirect without an authentication challenge",
+    "RDKit_conda_artifact": "HTTP 200 without an authentication challenge"
+  },
+  "interpretation": "Technical reachability does not grant redistribution rights. No large database file was downloaded during this check."
+}
+

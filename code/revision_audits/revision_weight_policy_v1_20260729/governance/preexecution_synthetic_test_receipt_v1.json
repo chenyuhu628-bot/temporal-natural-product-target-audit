@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "revision_weight_policy_v1_20260729",
+  "status": "PASS",
+  "test_scope": "synthetic_only_before_real_input_execution",
+  "test_count": 7,
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "checks": [
+    "exact frozen variant set and all-equal 1.0/1.0 alias",
+    "tier-weighted popularity construction",
+    "chemical-similarity reuse across weights",
+    "complete rank and top-50 change counters",
+    "zero changes for the primary reference",
+    "scope cardinality invariance",
+    "complete score/rank row contract"
+  ],
+  "real_scientific_input_read_by_tests": false,
+  "current_corrected_weight_results_computed_before_lock": false,
+  "created_at_utc": "2026-07-29T09:26:11.7700025Z"
+}

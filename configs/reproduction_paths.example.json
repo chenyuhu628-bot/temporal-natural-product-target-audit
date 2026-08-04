@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "status": "example_paths_for_hash_locked_local_inputs",
+  "inputs": {
+    "npass_v2_evidence": "work/reconstructed/npass_v2_evidence_records.tsv.gz",
+    "npass_v3_evidence": "work/reconstructed/npass_v3_evidence_records.tsv.gz",
+    "pubmed_v2_metadata": "work/reconstructed/pubmed_v2_metadata.csv.gz",
+    "npass_v2_structures": "work/sources/NPASSv2.0_download_naturalProducts_structureInfo.txt",
+    "frozen_historical_pairs": "work/reconstructed/historical_pairs.tsv.gz",
+    "frozen_scoring_queries": "work/reconstructed/scoring_queries.tsv.gz",
+    "frozen_compounds": "work/reconstructed/compounds.tsv.gz",
+    "candidate_targets": "work/reconstructed/candidate_targets.tsv.gz",
+    "candidate_sequences": "work/reconstructed/candidate_sequences.fasta",
+    "frozen_endpoint": "work/reconstructed/evaluation_pairs.tsv.gz",
+    "scaffold_audit": "work/reconstructed/scaffold_audit.tsv.gz",
+    "homology_0_30": "work/reconstructed/homology_0_30.tsv.gz",
+    "homology_0_50": "work/reconstructed/homology_0_50.tsv.gz",
+    "homology_0_70": "work/reconstructed/homology_0_70.tsv.gz",
+    "chembl31_target_catalogue": "work/reconstructed/chembl31_human_single_protein_targets.tsv.gz",
+    "chembl31_component_sequences": "work/reconstructed/chembl31_human_single_protein_targets.fasta"
+  },
+  "warning": "Obtain or reconstruct every input locally, then run scripts/rebuild_analysis.py. The gate requires all 16 locked SHA-256 values and does not authorize redistribution."
+}

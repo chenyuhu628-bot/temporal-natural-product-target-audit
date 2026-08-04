@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.1",
+  "analysis_id": "revision_tie_aware_v1_20260729",
+  "status": "PASS",
+  "test_scope": "synthetic_only_after_empty_subset_amendment_and_before_second_real_input_execution",
+  "test_count": 9,
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "amendment_specific_test": "An empty prespecified query subset returns blank interval endpoints with status not_estimable_no_queries; a zero-component sensitivity returns not_estimable_component_count_lt_2.",
+  "unchanged_scientific_tests": [
+    "uniform-tie expectations and exact bounds",
+    "membership classification",
+    "all-zero fractional metrics",
+    "Clopper-Pearson zero-success bound",
+    "seed derivation",
+    "component partition and resampling"
+  ],
+  "real_scientific_input_read_by_tests": false,
+  "real_tie_aware_aggregate_metric_values_seen_before_second_lock": false,
+  "created_at_utc": "2026-07-29T09:05:06.2546051Z"
+}
